@@ -2,4 +2,4 @@
 
 A standard for the collection and sharing of open data on electronics repair.
 
-More information available at https://openrepair.org/open-data/open-standard/.
+More information available at the [OpenRepair website](https://openrepair.org/open-data/open-standard/).
