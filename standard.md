@@ -86,52 +86,36 @@ For a categorisation field, an agreed selection of options needs to be agreed.  
 
 This section lists the expected data types and codelists for the required fields.
 
+```eval_rst
+.. list-table:: Data types and codelists
+   :widths: 25 25 50
+   :header-rows: 1
 
-Question
-Field Name
-Type
-Product Category
-
-
-product_category
-Option from open codelist.
-A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing product categorisations.
-Brand
-
-
-brand
-Option from open codelist.
-A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing methods.  
-
-
-Model
-
-
-
-model
-Option from open codelist.
-A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing methods.
-Year of Manufacture
-
-
-year_manufactured
-Year.  YYYY (i.e. four digit year)
-Problem
-problem
-Option from open codelist.
-A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing methods.
-Repair Status
-repair_status
-Option from closed codelist.
-A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect and share data using their existing methods.
-Group Identifier
-group_id
-String.  Unique.
-A unique identifier across all members that identifies the group responsible for the repair.  
-Date
-date
-Date.  YYYY-MM-DD format. (i.e. year, month, day.)
-
+   * - Question
+     - Field Name
+     - Type
+   * - Product Category
+     - product_category
+     - Option from open codelist. A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing product categorisations.
+   * - Brand
+     - brand
+     - Option from open codelist. A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing methods.  
+   * - Model
+     - model
+     - Option from open codelist. A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect data using their existing methods.
+   * - Year of Manufacture
+     - year_manufactured
+     - Year.  YYYY (i.e. four digit year)
+   * - Repair Status
+     - repair_status
+     - Option from closed codelist. A standardised codelist has yet to be agreed and is the subject of ongoing work. At present, groups will collect and share data using their existing methods.
+   * - Group Identifier
+     - group_id
+     - String.  Unique. A unique identifier across all members that identifies the group responsible for the repair.  
+   * - Date 
+     - date
+     - Date.  YYYY-MM-DD format. (i.e. year, month, day.)
+```
 
 
 ## Producing and Sharing Compliant Data
