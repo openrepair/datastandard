@@ -9,27 +9,24 @@ More information available at the [OpenRepair website](https://openrepair.org/op
 
 Export the Google document in "docx" format to root folder.
 
+Each section in the docx file should begin with a string that matches this regex: `^Section [1-9]: ` 
+
 Install the document converter.
 
 $ `apt install pandoc`
 
-Prepare the source files - converts docx to markdown (strict) and splits sections.
+Prepare the source files - converts docx to restructured text and splits sections.
 
 $ `bash prepare.sh -file '<filename>.docx'`
 
 This should produce four files:
 
-* 'about.md'
-* 'governance.md'
-* 'standard.md'
-* 'document.md'
+* 'about.rst'
+* 'governance.rst'
+* 'standard.rst'
+* 'document.rst'
 
 Edit the sections as necessary.
-
-##### _To Do: reduce the need for edits:_
-
-* _Specify docx formatting rules_
-* _Investigate strict markdown issues, e.g. tables_
 
 
 ## Build

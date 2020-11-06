@@ -15,9 +15,9 @@ if [ "$response" != "y" ]; then
     exit 1
 fi
 
-outfile="source.md"
+outfile="source.rst"
 
-pandoc -f docx -t markdown_strict -o $outfile "$infile"
+pandoc -f docx -t rst -o $outfile "$infile"
 
 filenames=( 'about' 'governance' 'standard' 'document')
 
@@ -27,9 +27,10 @@ newfile {print line > newfile}
 {line=$0}
 ' "$outfile"
 
-for ((i = 1 ; i < 5 ; i++)); do
-    echo "mv file$i.txt ${filenames[$i-1]}.md"
-    mv "file$i.txt" "${filenames[$i-1]}.md"
+for ((i = 1 ; i < 5 ; i++)); do    
+    echo "mv file$i.txt ${filenames[$i-1]}.rst"
+    sed -i s/"^Section [1-9]: "// "file$i.txt"
+    mv "file$i.txt" "${filenames[$i-1]}.rst"
 done
 
 rm $outfile
