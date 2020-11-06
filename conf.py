@@ -42,11 +42,11 @@ release = u''
 # ones.
 extensions = [
     "sphinx_rtd_theme",
-    "recommonmark"
-#    "rst2pdf.pdfbuilder"
+    "recommonmark",
+    "rst2pdf.pdfbuilder"
 ]
 
-#pdf_documents = [('index', 'about', 'governance', 'standard', 'document'),]
+pdf_documents = [('index', 'about', 'governance', 'standard', 'document'),]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -70,7 +70,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '*.md', u'_templates', u'_pdf', u'media']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -103,7 +103,6 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

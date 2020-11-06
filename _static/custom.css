@@ -8,3 +8,7 @@
     max-width: 100%;
     overflow: visible;
 }
+
+.rst-versions {
+    padding: 10px;
+}

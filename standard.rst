@@ -150,10 +150,9 @@ products are most difficult to repair in a community context, and why.
 
 **Ease of collection**: Most providers currently record information on
 the repair outcome. Mapping is required to go from current partner
-values to the ORDS recommended values - see `*Appendix
-E* <#appendix-e---repair-status>`__. Repair groups are keen to record
-this information already, as they can report on their own repair success
-to volunteers and funders.
+values to the ORDS recommended values - see Appendix E. Repair groups
+are keen to record this information already, as they can report on their
+own repair success to volunteers and funders.
 
 Barriers to Repair
 ''''''''''''''''''
@@ -305,8 +304,8 @@ Data Publishing
 
 Organisations will host their own CSV data files, in a publicly
 accessible and downloadable location such as their website. A public
-registry listing the URL of each of these datasets will be maintained on
-`*openrepair.org* <http://openrepair.org>`__.
+registry listing the URL of each of these datasets is maintained at
+*openrepair.org*.
 
 In order to ensure that the Alliance makes available up-to-date data on
 repair, each member commits to updating the ORDS data that it publishes
