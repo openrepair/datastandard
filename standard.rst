@@ -12,11 +12,9 @@ partners.
 To ensure this, organisations are expected to consider that their Open
 Repair data is:
 
--  Structured - data is valid in line with the requirements of the
-       standard
+-  Structured - data is valid in line with the requirements of the standard
 
--  Comparable - data can be linked across publishers through codelists
-       and shared references
+-  Comparable - data can be linked across publishers through codelists and shared references
 
 -  Open - data is appropriately licensed and published
 
@@ -269,8 +267,7 @@ Compliant data is data that:
 
 -  contains the required data as agreed per this standard
 
--  is formatted using the correct data formats as agreed per this
-       standard
+-  is formatted using the correct data formats as agreed per this standard
 
 -  is publicly available for download
 
