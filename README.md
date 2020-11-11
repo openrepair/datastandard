@@ -1,8 +1,8 @@
 # Open Repair Data Standard
 
-A standard for the collection and sharing of open data on electronics repair.
+The Open Repair Data Standard (ORDS) is a standard for the collection and sharing of open data on electronics repair.  
 
-More information available at the [OpenRepair website](https://openrepair.org/open-data/open-standard/).
+This repository contains the source files for building the technical documentation of ORDS.  The published version can be seen at https://standard.openrepair.org, and more information is available at the [OpenRepair website](https://openrepair.org/open-data/open-standard/).
 
 
 ## Prerequisites
