@@ -5,19 +5,21 @@ Document Information
 Version
 -------
 
-***Number***: 0.2
+*Number:* 0.2
 
-***Description***: Initial version agreed by Open Repair Alliance
-founding members.
+*Description*: Initial version agreed by Open Repair Alliance founding
+members
 
-***Published***: DD MM 2020.
+*Published*: DD MM 2020
+
+*Authors:* The Restart Project
 
 License
 -------
 
 The Open Repair Data Standard and supporting documentation is licensed
-under the `*Creative Commons Attribution-ShareAlike 4.0 (CC
-BY-SA)* <https://creativecommons.org/licenses/by/4.0/>`__ license.
+under the `*Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0* <https://creativecommons.org/licenses/by-sa/4.0/>`__).
 
 Changelog
 ---------
@@ -27,149 +29,17 @@ members, published on 14 November 2017
 
 ***V0.2*** - October 2020.
 
--  Recommended options for Repair Status.
+-  Recommended options for *repair\_status*
 
--  Addition of Barriers to Repair fields.
+-  Additions to *product\_category* values
 
-Appendix A - Product category
------------------------------
+-  Addition of *partner\_category* field
 
-+-------------------------------------+
-| Desktop computer                    |
-+=====================================+
-| Flat screen display                 |
-+-------------------------------------+
-| Laptop                              |
-+-------------------------------------+
-| Paper shredder                      |
-+-------------------------------------+
-| PC Accessory                        |
-+-------------------------------------+
-| Printer/scanner                     |
-+-------------------------------------+
-| Digital Compact Camera              |
-+-------------------------------------+
-| DSLR / Video Camera                 |
-+-------------------------------------+
-| Handheld entertainment device       |
-+-------------------------------------+
-| Headphones                          |
-+-------------------------------------+
-| Mobile                              |
-+-------------------------------------+
-| Tablet                              |
-+-------------------------------------+
-| Hi-Fi integrated                    |
-+-------------------------------------+
-| Hi-Fi separates                     |
-+-------------------------------------+
-| Musical instrument                  |
-+-------------------------------------+
-| Portable radio                      |
-+-------------------------------------+
-| Projector                           |
-+-------------------------------------+
-| TV and gaming-related accessories   |
-+-------------------------------------+
-| Aircon/Dehumidifier                 |
-+-------------------------------------+
-| Decorative or safety lights         |
-+-------------------------------------+
-| Fan                                 |
-+-------------------------------------+
-| Hair & Beauty item                  |
-+-------------------------------------+
-| Kettle                              |
-+-------------------------------------+
-| Lamp                                |
-+-------------------------------------+
-| Power tool                          |
-+-------------------------------------+
-| Small kitchen item                  |
-+-------------------------------------+
-| Toaster                             |
-+-------------------------------------+
-| Toy                                 |
-+-------------------------------------+
-| Vacuum                              |
-+-------------------------------------+
-| Misc                                |
-+-------------------------------------+
+-  Addition of *repair\_barrier* field
 
-Appendix B - Fault type
------------------------
+-  Addition of *country* field
 
-+--------------------------------+
-| Boot                           |
-+================================+
-| Case/chassis                   |
-+--------------------------------+
-| Configuration                  |
-+--------------------------------+
-| Damage (internal)              |
-+--------------------------------+
-| Keyboard (integrated)          |
-+--------------------------------+
-| Media component (integrated)   |
-+--------------------------------+
-| Multiple                       |
-+--------------------------------+
-| Operating system               |
-+--------------------------------+
-| Optical drive (internal)       |
-+--------------------------------+
-| Other                          |
-+--------------------------------+
-| Overheating                    |
-+--------------------------------+
-| Performance                    |
-+--------------------------------+
-| Pointing device (integrated)   |
-+--------------------------------+
-| Ports/slots/connectors         |
-+--------------------------------+
-| Power/battery                  |
-+--------------------------------+
-| Screen (integrated)            |
-+--------------------------------+
-| Storage (internal)             |
-+--------------------------------+
-| System board                   |
-+--------------------------------+
-| Unknown                        |
-+--------------------------------+
-| Virus/malware                  |
-+--------------------------------+
-
-Appendix C - Fault category
----------------------------
-
-+------------+
-| Hardware   |
-+============+
-| Software   |
-+------------+
-| Unknown    |
-+------------+
-
-Appendix D - Solution type
---------------------------
-
-+----------------+
-| Cleaned        |
-+================+
-| Reinstalled    |
-+----------------+
-| Repaired       |
-+----------------+
-| Replaced       |
-+----------------+
-| Unknown/None   |
-+----------------+
-| Upgraded       |
-+----------------+
-
-Appendix E - Repair status
+Appendix A - Repair status
 --------------------------
 
 This appendix outlines the repair statuses currently collected by

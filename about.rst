@@ -2,7 +2,7 @@
 About Open Repair Alliance
 =====================================
 
-Goals and ORDS Use Cases
+Goals and ORDS use cases
 ------------------------
 
 The initial objective of the Open Repair Alliance is to help
