@@ -9,13 +9,16 @@ This repository contains the source files for building the technical documentati
 
 A "docx" format file in the root folder. A Google document may be exported as "docx".
 
+A "pdf" format file in the _pdf folder. A Google document may be exported as "pdf". 
+Amend the link to the pdf file in _templates/layout.html.
+
 Each section in the docx file should begin with a string that matches this regex: `^Section [1-9]: ` 
 
 Document tables should not contain merged cells.
 
-Embedded internal links to headings (e.g. See Appendix A) break PDF generation and should be omitted.
+Embedded internal links to headings only work within the same section as they are converted to anchors.
 
-Images should be embedded within a "normal text" paragraph.
+Images should be embedded within a "normal text" paragraph else they will appear as a heading.
 
 Image files can be exported by saving the (Google) document as "html", find them in the zipfile's images folder.
 
@@ -61,21 +64,4 @@ See conf.py for all configuration options.
 Full documentation at [Sphinx Documentation](https://www.sphinx-doc.org/en/master/).
 
 [Documenting Your Project Using Sphinx](https://pythonhosted.org/an_example_pypi_project/sphinx.html)
-
-
-## PDF Exporter
-
-$ `pip install rst2pdf`
-
-$ `sphinx-build -b pdf ./ ./_pdf`
-
-[rst2pdf: Use a text editor. Make a PDF.](https://github.com/rst2pdf/rst2pdf)
-
-### Notes
-
-The generated file is not well formatted and ends up with the name of the first 
-rst file. See _pdf/about.pdf for result.
-
-Compare to _pdf/Open Repair Data Standard v0.2.pdf - Google Doc generated pdf.
-
 

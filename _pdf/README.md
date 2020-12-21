@@ -1,5 +1,7 @@
-PDF file and doctree will be generated in this folder.
+Place a "pdf" format file in this folder. 
 
-$ `sphinx-build -b pdf ./ ./_pdf`
+A Google document may be exported as "pdf".
 
-Rename and copy the pdf file to `./_build/html/`
+Amend the link to the pdf file in _templates/layout.html.
+
+After running `make html` copy the pdf file to `./_build/html/pdf`
