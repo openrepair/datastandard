@@ -6,8 +6,8 @@ Goals and ORDS use cases
 ------------------------
 
 The initial objective of the Open Repair Alliance is to help
-organisations involved in community repair to better harmonise the way
-we collect and share information about successes and challenges in
+organisations involved in community repair to harmonise the way we
+collect and share information about successes and challenges in
 repairing small electrical and consumer electronic devices, to increase
 the visibility and the impact of the work we all do.
 

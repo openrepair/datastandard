@@ -3,7 +3,7 @@
 case $1 in
 	-file ) infile=$2	
 			;;
-	--help | * ) 	echo "usage -file '<filename>.docx]'"
+	--help | * ) 	echo "usage -file '<filename>.docx>'"
 					exit 1
 					;;
 esac

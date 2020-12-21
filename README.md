@@ -9,7 +9,8 @@ More information available at the [OpenRepair website](https://openrepair.org/op
 
 A "docx" format file in the root folder. A Google document may be exported as "docx".
 
-A "pdf" format file in the _pdf folder. A Google document may be exported as "pdf".
+A "pdf" format file in the _pdf folder. A Google document may be exported as "pdf". 
+Amend the link to the pdf file in _templates/layout.html.
 
 Each section in the docx file should begin with a string that matches this regex: `^Section [1-9]: ` 
 

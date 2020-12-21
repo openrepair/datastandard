@@ -21,14 +21,14 @@ The work of the Alliance is facilitated by a coordinator organisation,
 The Restart Project, as of November 2017. This role is open to other
 members should they wish to participate or collaborate.
 
-Additional membership
----------------------
+Membership
+----------
 
-Membership is open to other organisations and individuals interested and
-active in issues around repair. These include: consumer rights
-organisations, environmental NGOs, networks and universities. The
-rationale for their involvement is to seek advice, support and insights
-from groups which might also benefit from our work.
+Membership is open to other organisations interested and active in
+issues around repair. These include: consumer rights organisations,
+environmental NGOs, networks and universities. The rationale for their
+involvement is to seek advice, support and insights from groups which
+might also benefit from our work.
 
 Decision making
 ---------------
