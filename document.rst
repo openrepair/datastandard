@@ -5,12 +5,12 @@ Document Information
 Version
 -------
 
-*Number:* 0.2
+*Number:* 0.2.1
 
 *Description*: Updated version agreed by Open Repair Alliance founding
 members, based on analysis and aggregation of data provided by partners
 
-*Published*: 21 12 2020
+*Published*: 25 01 2021
 
 *Authors:* The Restart Project
 
@@ -43,4 +43,7 @@ analysis and aggregation of data provided by partners
 -  Removal of *model* field due to problems with data collection and quality
 
 -  Removal of “additional modules” section
+
+***V0.2.1*** - Published January 2021. “Blender” category name changed
+to “Food processor”.
 

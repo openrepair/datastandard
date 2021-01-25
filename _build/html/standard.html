@@ -37,8 +37,8 @@
     
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <div>
-        <p><span class="fa fa-book">&nbsp;Version 0.2</span></p>        
-        <p><a href="pdf/Open Repair Data Standard v0.2.pdf" target="_blank">PDF</a></p>        
+        <p><span class="fa fa-book">&nbsp;Version 0.2.1</span></p>        
+        <p><a href="pdf/Open Repair Data Standard v0.2.1.pdf" target="_blank">PDF</a></p>        
         <p><a href="https://openrepair.org" target="_blank">Open Repair Alliance</a></p>
     </div>
 </div>
@@ -108,7 +108,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#field-reference">3.4. Field reference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#field-names-and-data-types">3.4.1. Field names and data types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#product-category-values">3.4.2. Product category values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ords-product-category-values">3.4.2. ORDS product category values</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#repair-status-values">3.4.3. Repair status values</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#repair-barrier-values">3.4.4. Repair barrier values</a></li>
 </ul>
@@ -314,7 +314,7 @@ included in the standard.</p>
 <h5>3.3.2.1.1. <strong>Product category</strong><a class="headerlink" href="#product-category" title="Permalink to this headline">¶</a></h5>
 <p>EEE- “powered” - devices</p>
 <p><em>Description:</em> A value drawn from a list of ORDS category strings. See
-<a class="reference external" href="#product-category-values">*Product categories*</a>. These values
+<a class="reference external" href="#ords-product-category-values">*Product categories*</a>. These values
 represent a reduced set of categories based on all item types seen
 across partner members. They are a cross-section of those regularly seen
 at community repair events, as well as those relevant to policy
@@ -346,13 +346,13 @@ judgement-calls in the mapping, allowing for data quality enhancements.</p>
 <p><em>Ease of collection:</em> Partners have always supplied their own categories
 within their datasets. The most valuable categorisations have uniformity
 and convention, i.e. they relate to predefined sets of values and are
-sanity checked at source. Ideally they are already mapped to the <a class="reference external" href="#product-category-values">*ORDS
-product category values*</a>. Some partner
-categorisation comes as free text and sometimes in languages other than
-English. During processing the partner category is often concatenated
-with another field, e.g. “product_kind” or “item_type”, e.g.
-“Household appliances electric ~ Coffee maker”, this extra detail helps
-in the mapping. Normalising the supplied categorisation makes the
+sanity checked at source. Ideally they are already mapped to the <a class="reference external" href="#ords-product-category-values">*ORDS
+product category values*</a>. Some
+partner categorisation comes as free text and sometimes in languages
+other than English. During processing the partner category is often
+concatenated with another field, e.g. “product_kind” or “item_type”,
+e.g. “Household appliances electric ~ Coffee maker”, this extra detail
+helps in the mapping. Normalising the supplied categorisation makes the
 process of mapping less prone to error, mistranslation, ambiguity and
 subjectivity.</p>
 </div>
@@ -537,7 +537,7 @@ place through the governance and revision process.</p>
 </tr>
 <tr class="row-even"><td>Product category</td>
 <td><em>product_category</em></td>
-<td>Option from ORDS <a class="reference external" href="#product-category-values">*product category codelist*</a>.</td>
+<td>Option from ORDS <a class="reference external" href="#ords-product-category-values">*product category codelist*</a>.</td>
 </tr>
 <tr class="row-odd"><td>Brand</td>
 <td><em>brand</em></td>
@@ -588,12 +588,12 @@ place through the governance and revision process.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="product-category-values">
-<h3>3.4.2. Product category values<a class="headerlink" href="#product-category-values" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ords-product-category-values">
+<h3>3.4.2. ORDS product category values<a class="headerlink" href="#ords-product-category-values" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
-<col width="42%" />
-<col width="58%" />
+<col width="31%" />
+<col width="69%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head"><em>Product category</em></th>
@@ -601,16 +601,16 @@ place through the governance and revision process.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Aircon/Dehumidifier</td>
+<tr class="row-even"><td>Aircon/dehumidifier</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Battery/charger/adapter</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-even"><td>Blender</td>
-<td>&#160;</td>
+<tr class="row-even"><td>Food processor</td>
+<td>e.g. multi processor, blender, juicer, coffee grinder, stick blender, hand mixer</td>
 </tr>
-<tr class="row-odd"><td>Coffee Maker</td>
+<tr class="row-odd"><td>Coffee maker</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Decorative or safety lights</td>
@@ -619,38 +619,38 @@ place through the governance and revision process.</p>
 <tr class="row-odd"><td>Desktop computer</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-even"><td>Digital Compact Camera</td>
+<tr class="row-even"><td>Digital compact camera</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>DSLR / Video Camera</td>
+<tr class="row-odd"><td>DSLR/video camera</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Fan</td>
-<td>&#160;</td>
+<td>e.g. cooling fan, fan heater</td>
 </tr>
 <tr class="row-odd"><td>Flat screen</td>
 <td>TVs and monitors</td>
 </tr>
 <tr class="row-even"><td>Games console</td>
-<td>&#160;</td>
+<td>e.g. Playstation, Gameboy</td>
 </tr>
-<tr class="row-odd"><td>Hair &amp; Beauty item</td>
-<td>e.g. Hair straighteners, toothbrushes, shavers</td>
+<tr class="row-odd"><td>Hair &amp; beauty item</td>
+<td>e.g. hair straightener, toothbrush, shaver</td>
 </tr>
 <tr class="row-even"><td>Hair dryer</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Handheld entertainment device</td>
-<td>e.g. iPods, Walkmans</td>
+<td>e.g. iPod, Walkman</td>
 </tr>
 <tr class="row-even"><td>Headphones</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Hi-Fi integrated</td>
-<td>&#160;</td>
+<td>e.g. “Boombox”, stereo</td>
 </tr>
 <tr class="row-even"><td>Hi-Fi separates</td>
-<td>&#160;</td>
+<td>e.g. amplifier, speaker, turntable</td>
 </tr>
 <tr class="row-odd"><td>Iron</td>
 <td>&#160;</td>
@@ -665,7 +665,7 @@ place through the governance and revision process.</p>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Large home electrical</td>
-<td>e.g fitness machines, steam cleaners</td>
+<td>e.g lawnmower, fitness machine, steam mop</td>
 </tr>
 <tr class="row-even"><td>Misc</td>
 <td>&#160;</td>
@@ -674,37 +674,37 @@ place through the governance and revision process.</p>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Musical instrument</td>
-<td>&#160;</td>
+<td>e.g. electric keyboard, electric guitar</td>
 </tr>
 <tr class="row-odd"><td>Paper shredder</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-even"><td>PC Accessory</td>
-<td>e.g. mice, keyboards, webcams</td>
+<tr class="row-even"><td>PC accessory</td>
+<td>e.g. mice, keyboard, webcam</td>
 </tr>
 <tr class="row-odd"><td>Portable radio</td>
-<td>&#160;</td>
+<td>e.g. radio alarm, transistor radio</td>
 </tr>
 <tr class="row-even"><td>Power tool</td>
-<td>e.g. DIY tools</td>
+<td>e.g. DIY tool</td>
 </tr>
 <tr class="row-odd"><td>Printer/scanner</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Projector</td>
-<td>&#160;</td>
+<td>e.g. slide projector, video projector, digital projector</td>
 </tr>
 <tr class="row-odd"><td>Sewing machine</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Small home electrical</td>
-<td>e.g. baby monitors, doorbells, multimeters</td>
+<td>e.g. baby monitor, doorbell, multimeter</td>
 </tr>
 <tr class="row-odd"><td>Small kitchen item</td>
-<td>e.g. breadmakers, rice cookers, popcorn machines</td>
+<td>e.g. breadmaker, rice cooker, popcorn machine</td>
 </tr>
 <tr class="row-even"><td>Tablet</td>
-<td>&#160;</td>
+<td>e.g. Kindle, satnav</td>
 </tr>
 <tr class="row-odd"><td>Toaster</td>
 <td>&#160;</td>
@@ -713,7 +713,7 @@ place through the governance and revision process.</p>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>TV and gaming-related accessories</td>
-<td>e.g. Set top boxes, DVD players</td>
+<td>e.g. set-top box, DVD player</td>
 </tr>
 <tr class="row-even"><td>Vacuum</td>
 <td>&#160;</td>
