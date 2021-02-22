@@ -10,5 +10,9 @@
 }
 
 .rst-versions {
-    padding: 10px;
+    padding: 5px 10px 0 10px;
+}
+
+.rst-versions li {
+    padding: 2px;
 }

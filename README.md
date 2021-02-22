@@ -59,6 +59,8 @@ $ `make html`
 
 View output at `./_build/html/index.html`
 
+! Don't forget to copy the PDF files from the _pdf folder to _build/html/pdf
+
 See conf.py for all configuration options.
 
 Full documentation at [Sphinx Documentation](https://www.sphinx-doc.org/en/master/).
