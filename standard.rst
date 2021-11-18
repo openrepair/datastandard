@@ -12,9 +12,11 @@ partners.
 To ensure this, organisations are expected to consider that their Open
 Repair data is:
 
--  Structured - data is valid in line with the requirements of the standard
+-  Structured - data is valid in line with the requirements of the
+      standard
 
--  Comparable - data can be linked across publishers through codelists and shared references
+-  Comparable - data can be linked across publishers through codelists
+      and shared references
 
 -  Open - data is appropriately licensed and published
 
@@ -59,27 +61,61 @@ Input fields
 Overview
 ~~~~~~~~
 
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------------------+
-| *Module*           | *Description*                                                                                                                                                                           | *Required fields*             | *Optional*               |
-+====================+=========================================================================================================================================================================================+===============================+==========================+
-| Product related    | Information about the product/device that someone has attempted to fix. To help relate repair issues to particular groupings of products.                                               | -  Partner product category   | -  Product category      |
-|                    |                                                                                                                                                                                         |                               |                          |
-|                    |                                                                                                                                                                                         |                               | -  Brand                 |
-|                    |                                                                                                                                                                                         |                               |                          |
-|                    |                                                                                                                                                                                         |                               | -  Year of manufacture   |
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------------------+
-| Repair related     | Information about the attempted fix and its outcome. To help ascertain common ways in which devices fail and the results of repair attempts.                                            | -  Repair status              | -  Repair barrier        |
-|                    |                                                                                                                                                                                         |                               |                          |
-|                    |                                                                                                                                                                                         | -  Problem                    |                          |
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------------------+
-| Session related    | Information about when the repair took place and through which entity, e.g. a specific community repair group on a particular date. To help verify the provenance of the repair data.   | -  ID                         | -  Group identifier      |
-|                    |                                                                                                                                                                                         |                               |                          |
-|                    |                                                                                                                                                                                         | -  Event date                 |                          |
-|                    |                                                                                                                                                                                         |                               |                          |
-|                    |                                                                                                                                                                                         | -  Country                    |                          |
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------------------+
-| Provider related   | Information about the data provider, i.e. which organisation collected and submitted the data.                                                                                          | -  Data provider              | -  Record date           |
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------------------+
++----------------+----------------+----------------+----------------+
+| *Module*       | *Description*  | *Required      | *Optional*     |
+|                |                | fields*        |                |
++================+================+================+================+
+| Product        | Information    | -  Partner     | -  Product     |
+| related        | about the      |       product  |       category |
+|                | product/device |       category |                |
+|                | that someone   |                | -  Brand       |
+|                | has attempted  |                |                |
+|                | to fix. To     |                | -  Year of     |
+|                | help relate    |                |                |
+|                | repair issues  |                |    manufacture |
+|                | to particular  |                |                |
+|                | groupings of   |                |                |
+|                | products.      |                |                |
++----------------+----------------+----------------+----------------+
+| Repair related | Information    | -  Repair      | -  Repair      |
+|                | about the      |       status   |       barrier  |
+|                | attempted fix  |                |                |
+|                | and its        | -  Problem     |                |
+|                | outcome. To    |                |                |
+|                | help ascertain |                |                |
+|                | common ways in |                |                |
+|                | which devices  |                |                |
+|                | fail and the   |                |                |
+|                | results of     |                |                |
+|                | repair         |                |                |
+|                | attempts.      |                |                |
++----------------+----------------+----------------+----------------+
+| Session        | Information    | -  ID          | -  Group       |
+| related        | about when the |                |                |
+|                | repair took    | -  Event date  |     identifier |
+|                | place and      |                |                |
+|                | through which  | -  Country     |                |
+|                | entity, e.g. a |                |                |
+|                | specific       |                |                |
+|                | community      |                |                |
+|                | repair group   |                |                |
+|                | on a           |                |                |
+|                | particular     |                |                |
+|                | date. To help  |                |                |
+|                | verify the     |                |                |
+|                | provenance of  |                |                |
+|                | the repair     |                |                |
+|                | data.          |                |                |
++----------------+----------------+----------------+----------------+
+| Provider       | Information    | -  Data        | -  Record date |
+| related        | about the data |       provider |                |
+|                | provider, i.e. |                |                |
+|                | which          |                |                |
+|                | organisation   |                |                |
+|                | collected and  |                |                |
+|                | submitted the  |                |                |
+|                | data.          |                |                |
++----------------+----------------+----------------+----------------+
 
 Details
 ~~~~~~~
@@ -97,7 +133,7 @@ EEE- “powered” - devices
                         
 
 *Description:* A value drawn from a list of ORDS category strings. See
-`*Product categories* <#ords-product-category-values>`__. These values
+`Product categories <#ords-product-category-values>`__. These values
 represent a reduced set of categories based on all item types seen
 across partner members. They are a cross-section of those regularly seen
 at community repair events, as well as those relevant to policy
@@ -112,8 +148,8 @@ discussions on specific product categories.
 
 *Ease of collection:* These values are not generally collected or
 supplied but mapped from partner-provided category values to ORDS
-category values. See `*Partner product
-category* <#partner-product-category>`__.
+category values. See `Partner product
+category <#partner-product-category>`__.
 
 Non-EEE- “unpowered” - items
                             
@@ -137,15 +173,14 @@ judgement-calls in the mapping, allowing for data quality enhancements.
 *Ease of collection:* Partners have always supplied their own categories
 within their datasets. The most valuable categorisations have uniformity
 and convention, i.e. they relate to predefined sets of values and are
-sanity checked at source. Ideally they are already mapped to the `*ORDS
-product category values* <#ords-product-category-values>`__. Some
-partner categorisation comes as free text and sometimes in languages
-other than English. During processing the partner category is often
-concatenated with another field, e.g. “product\_kind” or “item\_type”,
-e.g. “Household appliances electric ~ Coffee maker”, this extra detail
-helps in the mapping. Normalising the supplied categorisation makes the
-process of mapping less prone to error, mistranslation, ambiguity and
-subjectivity.
+sanity checked at source. Ideally they are already mapped to the `ORDS
+product category values <#ords-product-category-values>`__. Some partner
+categorisation comes as free text and sometimes in languages other than
+English. During processing the partner category is often concatenated
+with another field, e.g. “product_kind” or “item_type”, e.g. “Household
+appliances electric ~ Coffee maker”, this extra detail helps in the
+mapping. Normalising the supplied categorisation makes the process of
+mapping less prone to error, mistranslation, ambiguity and subjectivity.
 
 **Brand**
 '''''''''
@@ -162,13 +197,21 @@ brought to an event may be of a “generic” make.
 **Year of manufacture**
 '''''''''''''''''''''''
 
-*Description:* The year, or approximate year, that the item was made or
-released.
+*Description:* The year, or approximate year, that the item was made.
 
-*Use cases:* Useful for analysing the lifespan or durability of various
-product categories or brands.
+*Use cases:* Allows for the calculation of estimated product age of
+items, i.e. how old they were when they were repaired. Useful for
+analysing the lifespan or durability of various product categories or
+brands.
 
-*Ease of collection:* Not always known or identifiable.
+*Ease of collection:* Year of manufacture is not always easy for
+partners to record. In some cases, a product's age or year of
+manufacture may be based on an estimate by the owner of the item. This
+may, in some cases, only represent how long they have owned the item,
+and not necessarily the exact date of manufacture. As such, years of
+manufacture and product ages should be considered estimates only, to
+give an indicative suggestion of how old items are when brought to
+community repair events.
 
 Repair-related
 ^^^^^^^^^^^^^^
@@ -179,11 +222,15 @@ Repair-related
 *Description:* This is the outcome of the repair attempt that was
 undertaken on the device at the event.
 
--  1: “Fixed” - if the repairer and owner were satisfied that the item can continue to be used
+-  1: “Fixed” - if the repairer and owner were satisfied that the item
+      can continue to be used
 
--  2: “Repairable” - if the repairer and owner didn’t complete a repair, but identified what reasonable additional steps or professional help is needed
+-  2: “Repairable” - if the repairer and owner didn’t complete a repair,
+      but identified what reasonable additional steps or professional
+      help is needed
 
--  3: “End of life” - if the repairer and the owner decided that it is not cost-effective or realistic to repair the device
+-  3: “End of life” - if the repairer and the owner decided that it is
+      not cost-effective or realistic to repair the device
 
 -  0: An empty or zero value is recorded as “Unknown”
 
@@ -204,9 +251,9 @@ success to volunteers and funders.
 *Description:* A description of the problem identified with the device
 during the repair.
 
-*Use cases*: Common problems with categories devices can be identified,
-suggesting where design improvements could be made, or for which parts
-provision of spares is most required.
+*Use cases*: Common problems with devices can be identified, suggesting
+where design improvements could be made, or for which parts provision of
+spares is most required.
 
 *Ease of collection*: All partners currently record information on
 problems encountered during the repair attempt. This is currently in
@@ -323,7 +370,7 @@ casing as they see fit.
 *Description:* The date on which the record was last updated in the
 partner’s database. This is not necessarily the same as the date the
 repair attempt took place. The data may have been uploaded after the
-repair event. See also `*Event date* <#event-date>`__.
+repair event. See also `Event date <#event-date>`__.
 
 *Use cases:* The inclusion of this field can help to simplify the
 aggregation process by flagging the data that has changed since the last
@@ -344,162 +391,257 @@ a ‘codelist’. A codelist provides mandatory codes and publishers should
 only use values provided in the official list. Changes to codelists take
 place through the governance and revision process.
 
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| *Title*               | *Field name*                           | *Type*                                                                                                                                   |
-+=======================+========================================+==========================================================================================================================================+
-| ID                    | *id*                                   | Unique identifier from the partner organisation. Does not have to be unique across all partner data.                                     |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Partner category      | *partner\_product\_category*           | Option from partner codelist.                                                                                                            |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Product category      | *product\_category*                    | Option from ORDS `*product category codelist* <#ords-product-category-values>`__.                                                        |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Brand                 | *brand*                                | Free text.                                                                                                                               |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Year of manufacture   | *year\_of\_manufacture*                | Year. YYYY.                                                                                                                              |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Problem               | *problem*                              | Free text. Personal data should be removed, e.g. email addresses,.                                                                       |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Repair status         | *repair\_status*                       | Option from ORDS `*repair status codelist* <#repair-status-values>`__.                                                                   |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Repair barrier        | *repair\_barrier\_if\_end\_of\_life*   | Option from ORDS `*repair barrier codelist* <#repair-barrier-values>`__. Optional. Only relevant where repair\_status = “End of life”.   |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Group identifier      | *group\_identifier*                    | String. Unique.                                                                                                                          |
-|                       |                                        |                                                                                                                                          |
-|                       |                                        | A unique identifier across all partners that can identify the group responsible for the repair.                                          |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Event date            | *event\_date*                          | Date. YYYY-MM-DD format.                                                                                                                 |
-|                       |                                        |                                                                                                                                          |
-|                       |                                        | The date of the repair event that the repair took place at.                                                                              |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Data provider         | *data\_provider*                       | Option from ORDS codelist. Name of partner organisation.                                                                                 |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Country               | *country*                              | String. 3 letter ISO code, e.g. “GBR”.                                                                                                   |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Record date           | *record\_date*                         | Date. YYYY-MM-DD format.                                                                                                                 |
-|                       |                                        |                                                                                                                                          |
-|                       |                                        | The date that the record was last updated.                                                                                               |
-+-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------+----------------------+----------------------+
+| *Title*              | *Field name*         | *Type*               |
++======================+======================+======================+
+| ID                   | *id*                 | Unique identifier    |
+|                      |                      | from the partner     |
+|                      |                      | organisation. Does   |
+|                      |                      | not have to be       |
+|                      |                      | unique across all    |
+|                      |                      | partner data.        |
++----------------------+----------------------+----------------------+
+| Partner category     | *partn               | Option from partner  |
+|                      | er_product_category* | codelist.            |
++----------------------+----------------------+----------------------+
+| Product category     | *product_category*   | Option from ORDS     |
+|                      |                      | `product category    |
+|                      |                      | code                 |
+|                      |                      | list <#ords-product- |
+|                      |                      | category-values>`__. |
++----------------------+----------------------+----------------------+
+| Product category ID  | *                    | Unique identifier    |
+|                      | product_category_id* | associated with each |
+|                      |                      | *product_category*.  |
+|                      |                      | See the ORDS         |
+|                      |                      | `product category    |
+|                      |                      | code                 |
+|                      |                      | list <#ords-product- |
+|                      |                      | category-values>`__. |
++----------------------+----------------------+----------------------+
+| Brand                | *brand*              | Free text.           |
++----------------------+----------------------+----------------------+
+| Year of manufacture  | *                    | Year. YYYY.          |
+|                      | year_of_manufacture* |                      |
++----------------------+----------------------+----------------------+
+| Product age estimate | *p                   | A value derived from |
+|                      | roduct_age_estimate* | the *event_date and  |
+|                      |                      | year_of_manufacture* |
+|                      |                      | when the latter      |
+|                      |                      | value is available.  |
++----------------------+----------------------+----------------------+
+| Problem              | *problem*            | Free text. Personal  |
+|                      |                      | data should be       |
+|                      |                      | removed, e.g. email  |
+|                      |                      | addresses,.          |
++----------------------+----------------------+----------------------+
+| Repair status        | *repair_status*      | Option from ORDS     |
+|                      |                      | `repair status       |
+|                      |                      | codelist <#repai     |
+|                      |                      | r-status-values>`__. |
++----------------------+----------------------+----------------------+
+| Repair barrier       | *repair_bar          | Option from ORDS     |
+|                      | rier_if_end_of_life* | `repair barrier      |
+|                      |                      | codelist <#repair    |
+|                      |                      | -barrier-values>`__. |
+|                      |                      | Optional. Only       |
+|                      |                      | relevant where       |
+|                      |                      | repair_status = “End |
+|                      |                      | of life”.            |
++----------------------+----------------------+----------------------+
+| Group identifier     | *group_identifier*   | String. Unique.      |
+|                      |                      |                      |
+|                      |                      | A unique identifier  |
+|                      |                      | across all partners  |
+|                      |                      | that can identify    |
+|                      |                      | the group            |
+|                      |                      | responsible for the  |
+|                      |                      | repair.              |
++----------------------+----------------------+----------------------+
+| Event date           | *event_date*         | Date. YYYY-MM-DD     |
+|                      |                      | format.              |
+|                      |                      |                      |
+|                      |                      | The date of the      |
+|                      |                      | repair event that    |
+|                      |                      | the repair took      |
+|                      |                      | place at.            |
++----------------------+----------------------+----------------------+
+| Data provider        | *data_provider*      | Option from ORDS     |
+|                      |                      | codelist. Name of    |
+|                      |                      | partner              |
+|                      |                      | organisation.        |
++----------------------+----------------------+----------------------+
+| Country              | *country*            | String. 3 letter ISO |
+|                      |                      | code, e.g. “GBR”.    |
++----------------------+----------------------+----------------------+
+| Record date          | *record_date*        | Date. YYYY-MM-DD     |
+|                      |                      | format.              |
+|                      |                      |                      |
+|                      |                      | The date that the    |
+|                      |                      | record was last      |
+|                      |                      | updated.             |
++----------------------+----------------------+----------------------+
+
+.. _section-2:
 
 ORDS product category values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+-------------------------------------+------------------------------------------------------------------------------------+
-| *Product category*                  | *Notes*                                                                            |
-+=====================================+====================================================================================+
-| Aircon/dehumidifier                 |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Battery/charger/adapter             |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Food processor                      | e.g. multi processor, blender, juicer, coffee grinder, stick blender, hand mixer   |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Coffee maker                        |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Decorative or safety lights         | e.g. bike lights, fairy lights, Christmas lights                                   |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Desktop computer                    |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Digital compact camera              |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| DSLR/video camera                   |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Fan                                 | e.g. cooling fan, fan heater                                                       |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Flat screen                         | TVs and monitors                                                                   |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Games console                       | e.g. Playstation, Gameboy                                                          |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Hair & beauty item                  | e.g. hair straightener, toothbrush, shaver                                         |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Hair dryer                          |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Handheld entertainment device       | e.g. iPod, Walkman                                                                 |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Headphones                          |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Hi-Fi integrated                    | e.g. “Boombox”, stereo                                                             |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Hi-Fi separates                     | e.g. amplifier, speaker, turntable                                                 |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Iron                                |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Kettle                              |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Lamp                                |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Laptop                              |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Large home electrical               | e.g lawnmower, fitness machine, steam mop                                          |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Misc                                |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Mobile                              |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Musical instrument                  | e.g. electric keyboard, electric guitar                                            |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Paper shredder                      |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| PC accessory                        | e.g. mice, keyboard, webcam                                                        |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Portable radio                      | e.g. radio alarm, transistor radio                                                 |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Power tool                          | e.g. DIY tool                                                                      |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Printer/scanner                     |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Projector                           | e.g. slide projector, video projector, digital projector                           |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Sewing machine                      |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Small home electrical               | e.g. baby monitor, doorbell, multimeter                                            |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Small kitchen item                  | e.g. breadmaker, rice cooker, popcorn machine                                      |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Tablet                              | e.g. Kindle, satnav                                                                |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Toaster                             |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Toy                                 |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| TV and gaming-related accessories   | e.g. set-top box, DVD player                                                       |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Vacuum                              |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| Watch/clock                         |                                                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
++------+------------------------------+------------------------------+
+| *ID* | *Product category*           | *Notes*                      |
++======+==============================+==============================+
+| 1    | Aircon/dehumidifier          | Home/office appliance that   |
+|      |                              | adjusts ambient air quality. |
++------+------------------------------+------------------------------+
+| 2    | Battery/charger/adapter      | e.g. mobile phone charger,   |
+|      |                              | portable battery.            |
++------+------------------------------+------------------------------+
+| 3    | Decorative or safety lights  | e.g. bike lights, fairy      |
+|      |                              | lights, Christmas lights.    |
++------+------------------------------+------------------------------+
+| 4    | Desktop computer             | e.g. tower, mini tower, midi |
+|      |                              | tower, desktop.              |
++------+------------------------------+------------------------------+
+| 5    | Digital compact camera       | e.g. smaller electronic      |
+|      |                              | camera.                      |
++------+------------------------------+------------------------------+
+| 6    | DSLR/video camera            | e.g. larger electronic       |
+|      |                              | camera.                      |
++------+------------------------------+------------------------------+
+| 7    | Fan                          | e.g. cooling fan, fan        |
+|      |                              | heater.                      |
++------+------------------------------+------------------------------+
+| 8    | Flat screen                  | TVs and monitors.            |
++------+------------------------------+------------------------------+
+| 9    | Hair & beauty item           | e.g. hair straightener,      |
+|      |                              | toothbrush, shaver.          |
++------+------------------------------+------------------------------+
+| 10   | Handheld entertainment       | e.g. iPod, Walkman, Gameboy. |
+|      | device                       |                              |
++------+------------------------------+------------------------------+
+| 11   | Headphones                   | e.g. over-ear, earpods.      |
++------+------------------------------+------------------------------+
+| 12   | Hi-Fi integrated             | e.g. “Boombox”, stereo.      |
++------+------------------------------+------------------------------+
+| 13   | Hi-Fi separates              | e.g. amplifier, speaker,     |
+|      |                              | turntable.                   |
++------+------------------------------+------------------------------+
+| 14   | Kettle                       | Kitchen appliance for        |
+|      |                              | boiling water.               |
++------+------------------------------+------------------------------+
+| 15   | Lamp                         | e.g. desk lamp, floor lamp.  |
++------+------------------------------+------------------------------+
+| 16   | Laptop                       | Portable computer.           |
++------+------------------------------+------------------------------+
+| 17   | Large home electrical        | e.g lawnmower, fitness       |
+|      |                              | machine.                     |
++------+------------------------------+------------------------------+
+| 18   | Misc                         | Any electronic device that   |
+|      |                              | does not fit in another      |
+|      |                              | category.                    |
++------+------------------------------+------------------------------+
+| 19   | Mobile                       | Any hand-held smartphone or  |
+|      |                              | other telecommunications     |
+|      |                              | device.                      |
++------+------------------------------+------------------------------+
+| 20   | Musical instrument           | Any powered instrument e.g.  |
+|      |                              | keyboard, guitar.            |
++------+------------------------------+------------------------------+
+| 21   | Paper shredder               | Home/office appliance for    |
+|      |                              | shredding documents.         |
++------+------------------------------+------------------------------+
+| 22   | PC accessory                 | e.g. mouse, keyboard,        |
+|      |                              | webcam.                      |
++------+------------------------------+------------------------------+
+| 23   | Portable radio               | e.g. radio alarm, transistor |
+|      |                              | radio.                       |
++------+------------------------------+------------------------------+
+| 24   | Power tool                   | Any powered DIY or gardening |
+|      |                              | tool, e.g. leaf blower,      |
+|      |                              | drill.                       |
++------+------------------------------+------------------------------+
+| 25   | Printer/scanner              | Any inkjet, laserjet,        |
+|      |                              | scanner, copier or           |
+|      |                              | combination appliance.       |
++------+------------------------------+------------------------------+
+| 26   | Projector                    | e.g. slide projector, video  |
+|      |                              | projector, digital           |
+|      |                              | projector.                   |
++------+------------------------------+------------------------------+
+| 27   | Sewing machine               | Home appliance for stitching |
+|      |                              | fabric.                      |
++------+------------------------------+------------------------------+
+| 28   | Small home electrical        | e.g. baby monitor, doorbell, |
+|      |                              | multimeter.                  |
++------+------------------------------+------------------------------+
+| 29   | Small kitchen item           | e.g. breadmaker, rice        |
+|      |                              | cooker, popcorn machine.     |
++------+------------------------------+------------------------------+
+| 30   | Tablet                       | e.g. Kindle, Fire, satnav.   |
++------+------------------------------+------------------------------+
+| 31   | Toaster                      | Kitchen appliance for        |
+|      |                              | browning baked goods.        |
++------+------------------------------+------------------------------+
+| 32   | Toy                          | Any mains or battery powered |
+|      |                              | toy.                         |
++------+------------------------------+------------------------------+
+| 33   | TV and gaming-related        | e.g. set-top box, DVD        |
+|      | accessories                  | player, games controller.    |
++------+------------------------------+------------------------------+
+| 34   | Vacuum                       | Home appliance for sucking   |
+|      |                              | dust and dirt.               |
++------+------------------------------+------------------------------+
+| 35   | Watch/clock                  | Any electronic time-keeping  |
+|      |                              | or fitness monitoring        |
+|      |                              | device.                      |
++------+------------------------------+------------------------------+
+| 36   | Coffee maker                 | e.g. Nespresso, electronic   |
+|      |                              | filter or espresso machine.  |
++------+------------------------------+------------------------------+
+| 37   | Food processor               | e.g. multi processor,        |
+|      |                              | blender, juicer, coffee      |
+|      |                              | grinder, stick blender, hand |
+|      |                              | mixer.                       |
++------+------------------------------+------------------------------+
+| 38   | Games console                | e.g. Playstation, XBox. Note |
+|      |                              | that a small console may be  |
+|      |                              | classified as a “Hand-held   |
+|      |                              | entertainment device”.       |
++------+------------------------------+------------------------------+
+| 39   | Hair dryer                   | Appliance for hair drying    |
+|      |                              | and styling with warm air.   |
++------+------------------------------+------------------------------+
+| 40   | Iron                         | e.g. clothes iron, steam     |
+|      |                              | iron.                        |
++------+------------------------------+------------------------------+
 
 Repair status values
 ~~~~~~~~~~~~~~~~~~~~
 
-+----------+---------------+
-| *Code*   | *Text*        |
-+==========+===============+
-| 0        | Unknown       |
-+----------+---------------+
-| 1        | Fixed         |
-+----------+---------------+
-| 2        | Repairable    |
-+----------+---------------+
-| 3        | End of life   |
-+----------+---------------+
+====== ===========
+*Code* *Text*
+====== ===========
+0      Unknown
+1      Fixed
+2      Repairable
+3      End of life
+====== ===========
 
-Repair barrier values 
-~~~~~~~~~~~~~~~~~~~~~~
+Repair barrier values
+~~~~~~~~~~~~~~~~~~~~~
 
-+----------+------------------------------------+
-| *Code*   | *Text*                             |
-+==========+====================================+
-| 1        | Spare parts not available          |
-+----------+------------------------------------+
-| 2        | Spare parts too expensive          |
-+----------+------------------------------------+
-| 3        | No way to open product             |
-+----------+------------------------------------+
-| 4        | Repair information not available   |
-+----------+------------------------------------+
-| 5        | Lack of equipment                  |
-+----------+------------------------------------+
-| 6        | Item too worn out                  |
-+----------+------------------------------------+
+====== ================================
+*Code* *Text*
+====== ================================
+1      Spare parts not available
+2      Spare parts too expensive
+3      No way to open product
+4      Repair information not available
+5      Lack of equipment
+6      Item too worn out
+====== ================================
+
+.. _section-3:
 
 Producing and sharing compliant data
 ------------------------------------
@@ -521,27 +663,27 @@ Data format
 
 For data to be comparable, the values recorded for each field need to
 conform as prescribed e.g. a date value should conform to the agreed
-date format. See `*Field names and data
-types* <#field-names-and-data-types>`__ for a detailed field reference.
+date format. See `Field names and data
+types <#field-names-and-data-types>`__ for a detailed field reference.
 
 The data should be supplied in Comma Separated Values (CSV) format,
 where each row represents a single repair attempt, and will contain
 columns for each of the required fields listed above as well as
 additional fields where possible. The first row should be a header row
 and contain the column names matching those of the field names described
-in `*Field names and data types* <#field-names-and-data-types>`__. The
+in `Field names and data types <#field-names-and-data-types>`__. The
 header row should be in English if possible.
 
 Wherever possible, partners’ original values should be mapped to the
-ORDS codelist values as described in the `*Field
-reference* <#_weykv6bpw0xy>`__ section.
+ORDS codelist values as described in the `Field
+reference <#_weykv6bpw0xy>`__ section.
 
 Should there be a discrepancy between the prescribed data format and the
 supplied data format it would be desirable that a changelog or manifest
 or some form of documentation describing the differences be supplied
-also. See the `*Collected data modules section* <#collected-data>`__ for
-details of the required input. See `*Field names and data
-types* <#field-names-and-data-types>`__ for a detailed field reference.
+also. See the `Collected data modules section <#collected-data>`__ for
+details of the required input. See `Field names and data
+types <#field-names-and-data-types>`__ for a detailed field reference.
 
 The data definitions will undergo review as and when the standard
 evolves.
@@ -559,35 +701,37 @@ Data publishing
 ~~~~~~~~~~~~~~~
 
 The Open Repair Alliance aims to publish every 6 months. The processed
-datasets are stored in a `*public version control
-repository* <https://github.com/openrepair/data>`__ and made available
+datasets are stored in a `public version control
+repository <https://github.com/openrepair/data>`__ and made available
 for download at
-`*openrepair.org* <http://openrepair.org/open-data/downloads>`__.
+`openrepair.org <http://openrepair.org/open-data/downloads>`__.
 
 Data output 
-~~~~~~~~~~~~
+~~~~~~~~~~~
 
 The export process results in a package for each partner and one that
 contains an aggregate of all partner data.
 
 Each package is labelled using a convention that describes its contents
-and comprises two data files - one CSV format, one JSON format - along
-with a manifest file that describes the package contents including
-schema, provider details, licence and description.
+and comprises files in CSV and JSON formats, along with a manifest file
+that describes the package contents including schema, provider details,
+licence and description.
 
 Data versioning
 ~~~~~~~~~~~~~~~
 
-The `*ORA repository* <https://github.com/openrepair/data>`__ makes
+The `ORA repository <https://github.com/openrepair/data>`__ makes
 available all previous published datasets. Naming conventions are used
 in filenames to maintain version identification.
 
 Data licensing
 ~~~~~~~~~~~~~~
 
-Supplied data must be licensed under the `*Creative Commons
+Supplied data must be licensed under the `Creative Commons
 Attribution-ShareAlike 4.0 International (CC BY-SA
-4.0* <https://creativecommons.org/licenses/by-sa/4.0/>`__).
+4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`__).
 
 As the Data Standard evolves, licensing will be reviewed in order to
 best address the potential commercial use of the data by third parties.
+
+.. _section-4:
