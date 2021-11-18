@@ -42,9 +42,13 @@ release = u''
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    "sphinx_rtd_dark_mode",
     "recommonmark",
     "rst2pdf.pdfbuilder"
 ]
+
+# user starts in dark mode
+default_dark_mode = True
 
 pdf_documents = [('index', 'about', 'governance', 'standard', 'document'),]
 

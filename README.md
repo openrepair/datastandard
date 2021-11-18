@@ -47,13 +47,15 @@ Edit the sections as necessary.
 
 Assuming Python and pip are installed:
 
-$ `pip install sphinx`
+`$ pip install sphinx`
 
-$ `pip install recommonmark`
+`$ pip install recommonmark`
 
-$ `pip install sphinx_rtd_theme`
+`$ pip install sphinx_rtd_theme`
 
-$ `make html`
+`$ pip install sphinx-rtd-dark-mode`
+
+`$ make html`
 
 [How to format images in the markup](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images)
 
