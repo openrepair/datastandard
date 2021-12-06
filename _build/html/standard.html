@@ -17,7 +17,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
-        <script src="_static/dark_mode_js/default_dark.js"></script>
+        <script src="_static/dark_mode_js/default_light.js"></script>
         <script src="_static/dark_mode_js/theme_switcher.js"></script>
     <script src="_static/js/theme.js"></script>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -123,16 +123,8 @@ partners.</p>
 <p>To ensure this, organisations are expected to consider that their Open
 Repair data is:</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt>Structured - data is valid in line with the requirements of the</dt><dd><p>standard</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Comparable - data can be linked across publishers through codelists</dt><dd><p>and shared references</p>
-</dd>
-</dl>
-</li>
+<li><p>Structured - data is valid in line with the requirements of the standard</p></li>
+<li><p>Comparable - data can be linked across publishers through codelists and shared references</p></li>
 <li><p>Open - data is appropriately licensed and published</p></li>
 <li><p>Accurate - data is as accurate as possible</p></li>
 <li><p>Timely - data is kept up-to-date and updated regularly</p></li>
@@ -170,22 +162,20 @@ goal.</p>
 <h3><span class="section-number">3.3.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 28%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p><em>Module</em></p></th>
 <th class="head"><p><em>Description</em></p></th>
-<th class="head"><p><em>Required
-fields</em></p></th>
+<th class="head"><p><em>Required fields</em></p></th>
 <th class="head"><p><em>Optional</em></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Product
-related</p></td>
+<tr class="row-even"><td><p>Product related</p></td>
 <td><p>Information
 about the
 product/device
@@ -198,24 +188,14 @@ to particular
 groupings of
 products.</p></td>
 <td><ul class="simple">
-<li><dl class="simple">
-<dt>Partner</dt><dd><p>product
-category</p>
-</dd>
-</dl>
-</li>
+<li><p>Partner product category</p></li>
 </ul>
 </td>
-<td><ul>
-<li><dl class="simple">
-<dt>Product</dt><dd><p>category</p>
-</dd>
-</dl>
-</li>
+<td><ul class="simple">
+<li><p>Product category</p></li>
 <li><p>Brand</p></li>
-<li><p>Year of</p>
-<p>manufacture</p>
-</li>
+<li><p>Year of manufacture</p></li>
+<li><p>Product age</p></li>
 </ul>
 </td>
 </tr>
@@ -233,25 +213,16 @@ results of
 repair
 attempts.</p></td>
 <td><ul class="simple">
-<li><dl class="simple">
-<dt>Repair</dt><dd><p>status</p>
-</dd>
-</dl>
-</li>
+<li><p>Repair status</p></li>
 <li><p>Problem</p></li>
 </ul>
 </td>
 <td><ul class="simple">
-<li><dl class="simple">
-<dt>Repair</dt><dd><p>barrier</p>
-</dd>
-</dl>
-</li>
+<li><p>Repair barrier</p></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><p>Session
-related</p></td>
+<tr class="row-even"><td><p>Session related</p></td>
 <td><p>Information
 about when the
 repair took
@@ -274,17 +245,12 @@ data.</p></td>
 <li><p>Country</p></li>
 </ul>
 </td>
-<td><ul>
-<li><p>Group</p>
-<blockquote>
-<div><p>identifier</p>
-</div></blockquote>
-</li>
+<td><ul class="simple">
+<li><p>Group identifier</p></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><p>Provider
-related</p></td>
+<tr class="row-odd"><td><p>Provider related</p></td>
 <td><p>Information
 about the data
 provider, i.e.
@@ -294,11 +260,7 @@ collected and
 submitted the
 data.</p></td>
 <td><ul class="simple">
-<li><dl class="simple">
-<dt>Data</dt><dd><p>provider</p>
-</dd>
-</dl>
-</li>
+<li><p>Data provider</p></li>
 </ul>
 </td>
 <td><ul class="simple">
@@ -369,19 +331,21 @@ products brought to repair events.</p>
 <p><em>Ease of collection:</em> Brand is not always identifiable, some items
 brought to an event may be of a “generic” make.</p>
 </div>
-<div class="section" id="year-of-manufacture">
-<h5><span class="section-number">3.3.2.1.4. </span><strong>Year of manufacture</strong><a class="headerlink" href="#year-of-manufacture" title="Permalink to this headline"></a></h5>
-<p><em>Description:</em> The year, or approximate year, that the item was made.</p>
-<p><em>Use cases:</em> Allows for the calculation of estimated product age of
-items, i.e. how old they were when they were repaired. Useful for
+<div class="section" id="product-age-year-of-manufacture">
+<h5><span class="section-number">3.3.2.1.4. </span><strong>Product age / Year of manufacture</strong><a class="headerlink" href="#product-age-year-of-manufacture" title="Permalink to this headline"></a></h5>
+<p><em>Description:</em> Product age: The estimated age of the product when seen.
+Year of manufacture: The year, or approximate year, that the item was
+made.</p>
+<p><em>Use cases:</em> These fields allow for the analysis of estimated product
+age of items, i.e. how old they were when they were repaired. Useful for
 analysing the lifespan or durability of various product categories or
 brands.</p>
-<p><em>Ease of collection:</em> Year of manufacture is not always easy for
-partners to record. In some cases, a product’s age or year of
+<p><em>Ease of collection: Product age and</em> year of manufacture are not always
+easy to record accurately. In some cases, a product’s age or year of
 manufacture may be based on an estimate by the owner of the item. This
 may, in some cases, only represent how long they have owned the item,
-and not necessarily the exact date of manufacture. As such, years of
-manufacture and product ages should be considered estimates only, to
+and not necessarily the exact date of manufacture or age. As such, years
+of manufacture and product ages should be considered estimates only, to
 give an indicative suggestion of how old items are when brought to
 community repair events.</p>
 </div>
@@ -541,19 +505,20 @@ only use values provided in the official list. Changes to codelists take
 place through the governance and revision process.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 27%" />
+<col style="width: 42%" />
+<col style="width: 0%" />
+<col style="width: 31%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p><em>Title</em></p></th>
-<th class="head"><p><em>Field name</em></p></th>
+<th class="head" colspan="2"><p><em>Field name</em></p></th>
 <th class="head"><p><em>Type</em></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>ID</p></td>
-<td><p><em>id</em></p></td>
+<td colspan="2"><p><em>id</em></p></td>
 <td><p>Unique identifier
 from the partner
 organisation. Does
@@ -562,24 +527,19 @@ unique across all
 partner data.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Partner category</p></td>
-<td><p><em>partn
-er_product_category</em></p></td>
+<td colspan="2"><p><em>partner_product_category</em></p></td>
 <td><p>Option from partner
 codelist.</p></td>
 </tr>
 <tr class="row-even"><td><p>Product category</p></td>
-<td><p><em>product_category</em></p></td>
+<td colspan="2"><p><em>product_category</em></p></td>
 <td><p>Option from ORDS
 <a class="reference external" href="#ords-product-category-values">product category
 code
 list</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Product category ID</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-<p>product_category_id*</p>
-</td>
+<td colspan="2"><p><em>product_category_id</em></p></td>
 <td><p>Unique identifier
 associated with each
 <em>product_category</em>.
@@ -589,42 +549,40 @@ code
 list</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p>Brand</p></td>
-<td><p><em>brand</em></p></td>
+<td colspan="2"><p><em>brand</em></p></td>
 <td><p>Free text.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Year of manufacture</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-<p>year_of_manufacture*</p>
-</td>
-<td><p>Year. YYYY.</p></td>
+<td colspan="2"><p><em>year_of_manufacture</em></p></td>
+<td><p>Year. YYYY format.
+Can be derived from
+<em>event_date</em> minus
+<em>product_age</em>.</p></td>
 </tr>
-<tr class="row-even"><td><p>Product age estimate</p></td>
-<td><p><em>p
-roduct_age_estimate</em></p></td>
-<td><p>A value derived from
-the <em>event_date and
-year_of_manufacture</em>
-when the latter
-value is available.</p></td>
+<tr class="row-even"><td><p>Product age</p></td>
+<td colspan="2"><p><em>product_age</em></p></td>
+<td><p>Float (0 to 1 dec
+places, e.g. 1,
+1.5). Can be derived
+from <em>event_date</em>
+minus
+<em>year_of_manufacture</em>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Problem</p></td>
-<td><p><em>problem</em></p></td>
+<td colspan="2"><p><em>problem</em></p></td>
 <td><p>Free text. Personal
 data should be
 removed, e.g. email
 addresses,.</p></td>
 </tr>
 <tr class="row-even"><td><p>Repair status</p></td>
-<td><p><em>repair_status</em></p></td>
+<td colspan="2"><p><em>repair_status</em></p></td>
 <td><p>Option from ORDS
 <a class="reference external" href="#repair-status-values">repair status
 codelist</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Repair barrier</p></td>
-<td><p><em>repair_bar
-rier_if_end_of_life</em></p></td>
+<td colspan="2"><p><em>repair_barrier_if_end_of_life</em></p></td>
 <td><p>Option from ORDS
 <a class="reference external" href="#repair-barrier-values">repair barrier
 codelist</a>.
@@ -634,46 +592,43 @@ repair_status = “End
 of life”.</p></td>
 </tr>
 <tr class="row-even"><td><p>Group identifier</p></td>
-<td><p><em>group_identifier</em></p></td>
-<td><p>String. Unique.</p>
-<p>A unique identifier
+<td colspan="2"><p><em>group_identifier</em></p></td>
+<td><p>String. Unique.
+A unique identifier
 across all partners
 that can identify
 the group
 responsible for the
-repair.</p>
-</td>
+repair.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Event date</p></td>
-<td><p><em>event_date</em></p></td>
+<td colspan="2"><p><em>event_date</em></p></td>
 <td><p>Date. YYYY-MM-DD
-format.</p>
-<p>The date of the
+format.
+The date of the
 repair event that
 the repair took
-place at.</p>
-</td>
+place at.</p></td>
 </tr>
 <tr class="row-even"><td><p>Data provider</p></td>
-<td><p><em>data_provider</em></p></td>
+<td colspan="2"><p><em>data_provider</em></p></td>
 <td><p>Option from ORDS
 codelist. Name of
 partner
 organisation.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Country</p></td>
-<td><p><em>country</em></p></td>
+<td colspan="2"><p><em>country</em></p></td>
 <td><p>String. 3 letter ISO
 code, e.g. “GBR”.</p></td>
 </tr>
 <tr class="row-even"><td><p>Record date</p></td>
-<td><p><em>record_date</em></p></td>
+<td colspan="2"><p><em>record_date</em></p></td>
 <td><p>Date. YYYY-MM-DD
-format.</p>
-<p>The date that the
+format.
+The date that the
 record was last
-updated.</p>
-</td>
+updated.</p></td>
 </tr>
 </tbody>
 </table>
@@ -694,12 +649,12 @@ updated.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>Aircon/dehumidifier</p></td>
+<td><p>Aircon / dehumidifier</p></td>
 <td><p>Home/office appliance that
 adjusts ambient air quality.</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Battery/charger/adapter</p></td>
+<td><p>Battery / charger / adapter</p></td>
 <td><p>e.g. mobile phone charger,
 portable battery.</p></td>
 </tr>
@@ -719,7 +674,7 @@ tower, desktop.</p></td>
 camera.</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
-<td><p>DSLR/video camera</p></td>
+<td><p>DSLR / video camera</p></td>
 <td><p>e.g. larger electronic
 camera.</p></td>
 </tr>
@@ -812,7 +767,7 @@ tool, e.g. leaf blower,
 drill.</p></td>
 </tr>
 <tr class="row-even"><td><p>25</p></td>
-<td><p>Printer/scanner</p></td>
+<td><p>Printer / scanner</p></td>
 <td><p>Any inkjet, laserjet,
 scanner, copier or
 combination appliance.</p></td>
@@ -864,7 +819,7 @@ player, games controller.</p></td>
 dust and dirt.</p></td>
 </tr>
 <tr class="row-even"><td><p>35</p></td>
-<td><p>Watch/clock</p></td>
+<td><p>Watch / clock</p></td>
 <td><p>Any electronic time-keeping
 or fitness monitoring
 device.</p></td>
@@ -1052,7 +1007,7 @@ best address the potential commercial use of the data by third parties.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Open Repair Alliance.</p>
+    <p>&#169; Copyright 2021, Open Repair Alliance.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

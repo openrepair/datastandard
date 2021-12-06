@@ -12,11 +12,9 @@ partners.
 To ensure this, organisations are expected to consider that their Open
 Repair data is:
 
--  Structured - data is valid in line with the requirements of the
-      standard
+-  Structured - data is valid in line with the requirements of the standard
 
--  Comparable - data can be linked across publishers through codelists
-      and shared references
+-  Comparable - data can be linked across publishers through codelists and shared references
 
 -  Open - data is appropriately licensed and published
 
@@ -61,61 +59,61 @@ Input fields
 Overview
 ~~~~~~~~
 
-+----------------+----------------+----------------+----------------+
-| *Module*       | *Description*  | *Required      | *Optional*     |
-|                |                | fields*        |                |
-+================+================+================+================+
-| Product        | Information    | -  Partner     | -  Product     |
-| related        | about the      |       product  |       category |
-|                | product/device |       category |                |
-|                | that someone   |                | -  Brand       |
-|                | has attempted  |                |                |
-|                | to fix. To     |                | -  Year of     |
-|                | help relate    |                |                |
-|                | repair issues  |                |    manufacture |
-|                | to particular  |                |                |
-|                | groupings of   |                |                |
-|                | products.      |                |                |
-+----------------+----------------+----------------+----------------+
-| Repair related | Information    | -  Repair      | -  Repair      |
-|                | about the      |       status   |       barrier  |
-|                | attempted fix  |                |                |
-|                | and its        | -  Problem     |                |
-|                | outcome. To    |                |                |
-|                | help ascertain |                |                |
-|                | common ways in |                |                |
-|                | which devices  |                |                |
-|                | fail and the   |                |                |
-|                | results of     |                |                |
-|                | repair         |                |                |
-|                | attempts.      |                |                |
-+----------------+----------------+----------------+----------------+
-| Session        | Information    | -  ID          | -  Group       |
-| related        | about when the |                |                |
-|                | repair took    | -  Event date  |     identifier |
-|                | place and      |                |                |
-|                | through which  | -  Country     |                |
-|                | entity, e.g. a |                |                |
-|                | specific       |                |                |
-|                | community      |                |                |
-|                | repair group   |                |                |
-|                | on a           |                |                |
-|                | particular     |                |                |
-|                | date. To help  |                |                |
-|                | verify the     |                |                |
-|                | provenance of  |                |                |
-|                | the repair     |                |                |
-|                | data.          |                |                |
-+----------------+----------------+----------------+----------------+
-| Provider       | Information    | -  Data        | -  Record date |
-| related        | about the data |       provider |                |
-|                | provider, i.e. |                |                |
-|                | which          |                |                |
-|                | organisation   |                |                |
-|                | collected and  |                |                |
-|                | submitted the  |                |                |
-|                | data.          |                |                |
-+----------------+----------------+----------------+----------------+
++------------------+----------------+-----------------------------+-------------------------+
+| *Module*         | *Description*  | *Required fields*           | *Optional*              |
+|                  |                |                             |                         |
++==================+================+=============================+=========================+
+| Product related  | Information    | -  Partner product category | -  Product category     |
+|                  | about the      |                             |                         |
+|                  | product/device |                             | -  Brand                |
+|                  | that someone   |                             |                         |
+|                  | has attempted  |                             | -  Year of manufacture  |
+|                  | to fix. To     |                             |                         |
+|                  | help relate    |                             | -  Product age          |
+|                  | repair issues  |                             |                         |
+|                  | to particular  |                             |                         |
+|                  | groupings of   |                             |                         |
+|                  | products.      |                             |                         |
++------------------+----------------+-----------------------------+-------------------------+
+| Repair related   | Information    | -  Repair status            | -  Repair barrier       |
+|                  | about the      |                             |                         |
+|                  | attempted fix  | -  Problem                  |                         |                        
+|                  | and its        |                             |                         |
+|                  | outcome. To    |                             |                         |
+|                  | help ascertain |                             |                         |
+|                  | common ways in |                             |                         |
+|                  | which devices  |                             |                         |
+|                  | fail and the   |                             |                         |
+|                  | results of     |                             |                         |
+|                  | repair         |                             |                         |
+|                  | attempts.      |                             |                         |
++------------------+----------------+-----------------------------+-------------------------+
+| Session related  | Information    | -  ID                       | -  Group identifier     |
+|                  | about when the |                             |                         |
+|                  | repair took    | -  Event date               |                         |
+|                  | place and      |                             |                         |
+|                  | through which  | -  Country                  |                         |
+|                  | entity, e.g. a |                             |                         |
+|                  | specific       |                             |                         |
+|                  | community      |                             |                         |
+|                  | repair group   |                             |                         |
+|                  | on a           |                             |                         |
+|                  | particular     |                             |                         |
+|                  | date. To help  |                             |                         |
+|                  | verify the     |                             |                         |
+|                  | provenance of  |                             |                         |
+|                  | the repair     |                             |                         |
+|                  | data.          |                             |                         |
++------------------+----------------+-----------------------------+-------------------------+
+| Provider related | Information    | -  Data provider            | -  Record date          |
+|                  | about the data |                             |                         |
+|                  | provider, i.e. |                             |                         |
+|                  | which          |                             |                         |
+|                  | organisation   |                             |                         |
+|                  | collected and  |                             |                         |
+|                  | submitted the  |                             |                         |
+|                  | data.          |                             |                         |
++------------------+----------------+-----------------------------+-------------------------+
 
 Details
 ~~~~~~~
@@ -194,22 +192,24 @@ products brought to repair events.
 *Ease of collection:* Brand is not always identifiable, some items
 brought to an event may be of a “generic” make.
 
-**Year of manufacture**
-'''''''''''''''''''''''
+**Product age / Year of manufacture**
+'''''''''''''''''''''''''''''''''''''
 
-*Description:* The year, or approximate year, that the item was made.
+*Description:* Product age: The estimated age of the product when seen.
+Year of manufacture: The year, or approximate year, that the item was
+made.
 
-*Use cases:* Allows for the calculation of estimated product age of
-items, i.e. how old they were when they were repaired. Useful for
+*Use cases:* These fields allow for the analysis of estimated product
+age of items, i.e. how old they were when they were repaired. Useful for
 analysing the lifespan or durability of various product categories or
 brands.
 
-*Ease of collection:* Year of manufacture is not always easy for
-partners to record. In some cases, a product's age or year of
+*Ease of collection: Product age and* year of manufacture are not always
+easy to record accurately. In some cases, a product's age or year of
 manufacture may be based on an estimate by the owner of the item. This
 may, in some cases, only represent how long they have owned the item,
-and not necessarily the exact date of manufacture. As such, years of
-manufacture and product ages should be considered estimates only, to
+and not necessarily the exact date of manufacture or age. As such, years
+of manufacture and product ages should be considered estimates only, to
 give an indicative suggestion of how old items are when brought to
 community repair events.
 
@@ -391,96 +391,96 @@ a ‘codelist’. A codelist provides mandatory codes and publishers should
 only use values provided in the official list. Changes to codelists take
 place through the governance and revision process.
 
-+----------------------+----------------------+----------------------+
-| *Title*              | *Field name*         | *Type*               |
-+======================+======================+======================+
-| ID                   | *id*                 | Unique identifier    |
-|                      |                      | from the partner     |
-|                      |                      | organisation. Does   |
-|                      |                      | not have to be       |
-|                      |                      | unique across all    |
-|                      |                      | partner data.        |
-+----------------------+----------------------+----------------------+
-| Partner category     | *partn               | Option from partner  |
-|                      | er_product_category* | codelist.            |
-+----------------------+----------------------+----------------------+
-| Product category     | *product_category*   | Option from ORDS     |
-|                      |                      | `product category    |
-|                      |                      | code                 |
-|                      |                      | list <#ords-product- |
-|                      |                      | category-values>`__. |
-+----------------------+----------------------+----------------------+
-| Product category ID  | *                    | Unique identifier    |
-|                      | product_category_id* | associated with each |
-|                      |                      | *product_category*.  |
-|                      |                      | See the ORDS         |
-|                      |                      | `product category    |
-|                      |                      | code                 |
-|                      |                      | list <#ords-product- |
-|                      |                      | category-values>`__. |
-+----------------------+----------------------+----------------------+
-| Brand                | *brand*              | Free text.           |
-+----------------------+----------------------+----------------------+
-| Year of manufacture  | *                    | Year. YYYY.          |
-|                      | year_of_manufacture* |                      |
-+----------------------+----------------------+----------------------+
-| Product age estimate | *p                   | A value derived from |
-|                      | roduct_age_estimate* | the *event_date and  |
-|                      |                      | year_of_manufacture* |
-|                      |                      | when the latter      |
-|                      |                      | value is available.  |
-+----------------------+----------------------+----------------------+
-| Problem              | *problem*            | Free text. Personal  |
-|                      |                      | data should be       |
-|                      |                      | removed, e.g. email  |
-|                      |                      | addresses,.          |
-+----------------------+----------------------+----------------------+
-| Repair status        | *repair_status*      | Option from ORDS     |
-|                      |                      | `repair status       |
-|                      |                      | codelist <#repai     |
-|                      |                      | r-status-values>`__. |
-+----------------------+----------------------+----------------------+
-| Repair barrier       | *repair_bar          | Option from ORDS     |
-|                      | rier_if_end_of_life* | `repair barrier      |
-|                      |                      | codelist <#repair    |
-|                      |                      | -barrier-values>`__. |
-|                      |                      | Optional. Only       |
-|                      |                      | relevant where       |
-|                      |                      | repair_status = “End |
-|                      |                      | of life”.            |
-+----------------------+----------------------+----------------------+
-| Group identifier     | *group_identifier*   | String. Unique.      |
-|                      |                      |                      |
-|                      |                      | A unique identifier  |
-|                      |                      | across all partners  |
-|                      |                      | that can identify    |
-|                      |                      | the group            |
-|                      |                      | responsible for the  |
-|                      |                      | repair.              |
-+----------------------+----------------------+----------------------+
-| Event date           | *event_date*         | Date. YYYY-MM-DD     |
-|                      |                      | format.              |
-|                      |                      |                      |
-|                      |                      | The date of the      |
-|                      |                      | repair event that    |
-|                      |                      | the repair took      |
-|                      |                      | place at.            |
-+----------------------+----------------------+----------------------+
-| Data provider        | *data_provider*      | Option from ORDS     |
-|                      |                      | codelist. Name of    |
-|                      |                      | partner              |
-|                      |                      | organisation.        |
-+----------------------+----------------------+----------------------+
-| Country              | *country*            | String. 3 letter ISO |
-|                      |                      | code, e.g. “GBR”.    |
-+----------------------+----------------------+----------------------+
-| Record date          | *record_date*        | Date. YYYY-MM-DD     |
-|                      |                      | format.              |
-|                      |                      |                      |
-|                      |                      | The date that the    |
-|                      |                      | record was last      |
-|                      |                      | updated.             |
-+----------------------+----------------------+----------------------+
++---------------------+---------------------------------+------------------------+
+| *Title*             | *Field name*                    | *Type*                 |
++=====================+================================++========================+
+| ID                  | *id*                            | Unique identifier      |
+|                     |                                 | from the partner       |
+|                     |                                 | organisation. Does     |
+|                     |                                 | not have to be         |
+|                     |                                 | unique across all      |
+|                     |                                 | partner data.          |
++---------------------+---------------------------------+------------------------+
+| Partner category    | *partner_product_category*      | Option from partner    |
+|                     |                                 | codelist.              |
++---------------------+---------------------------------+------------------------+
+| Product category    | *product_category*              | Option from ORDS       |
+|                     |                                 | `product category      |
+|                     |                                 | code                   |
+|                     |                                 | list <#ords-product-   |
+|                     |                                 | category-values>`__.   |
++---------------------+---------------------------------+------------------------+
+| Product category ID | *product_category_id*           | Unique identifier      |
+|                     |                                 | associated with each   |
+|                     |                                 | *product_category*.    |
+|                     |                                 | See the ORDS           |
+|                     |                                 | `product category      |
+|                     |                                 | code                   |
+|                     |                                 | list <#ords-product-   |
+|                     |                                 | category-values>`__.   |
++---------------------+---------------------------------+------------------------+
+| Brand               | *brand*                         | Free text.             |
++---------------------+---------------------------------+------------------------+
+| Year of manufacture | *year_of_manufacture*           | Year. YYYY format.     |
+|                     |                                 | Can be derived from    |
+|                     |                                 | *event_date* minus     |
+|                     |                                 | *product_age*.         |
++---------------------+---------------------------------+------------------------+
+| Product age         | *product_age*                   | Float (0 to 1 dec      |
+|                     |                                 | places, e.g. 1,        |
+|                     |                                 | 1.5). Can be derived   |
+|                     |                                 | from *event_date*      |
+|                     |                                 | minus                  |
+|                     |                                 | *year_of_manufacture*. |
++---------------------+---------------------------------+------------------------+
+| Problem             | *problem*                       | Free text. Personal    |
+|                     |                                 | data should be         |
+|                     |                                 | removed, e.g. email    |
+|                     |                                 | addresses,.            |
++---------------------+---------------------------------+------------------------+
+| Repair status       | *repair_status*                 | Option from ORDS       |
+|                     |                                 | `repair status         |
+|                     |                                 | codelist <#repai       |
+|                     |                                 | r-status-values>`__.   |
++---------------------+---------------------------------+------------------------+
+| Repair barrier      | *repair_barrier_if_end_of_life* | Option from ORDS       |
+|                     |                                 | `repair barrier        |
+|                     |                                 | codelist <#repair      |
+|                     |                                 | -barrier-values>`__.   |
+|                     |                                 | Optional. Only         |
+|                     |                                 | relevant where         |
+|                     |                                 | repair_status = “End   |
+|                     |                                 | of life”.              |
++---------------------+---------------------------------+------------------------+
+| Group identifier    | *group_identifier*              | String. Unique.        |
+|                     |                                 | A unique identifier    |
+|                     |                                 | across all partners    |
+|                     |                                 | that can identify      |
+|                     |                                 | the group              |
+|                     |                                 | responsible for the    |
+|                     |                                 | repair.                |
++---------------------+---------------------------------+------------------------+
+| Event date          | *event_date*                    | Date. YYYY-MM-DD       |
+|                     |                                 | format.                |
+|                     |                                 | The date of the        |
+|                     |                                 | repair event that      |
+|                     |                                 | the repair took        |
+|                     |                                 | place at.              |
++---------------------+---------------------------------+------------------------+
+| Data provider       | *data_provider*                 | Option from ORDS       |
+|                     |                                 | codelist. Name of      |
+|                     |                                 | partner                |
+|                     |                                 | organisation.          |
++---------------------+---------------------------------+------------------------+
+| Country             | *country*                       | String. 3 letter ISO   |
+|                     |                                 | code, e.g. “GBR”.      |
++---------------------+---------------------------------+------------------------+
+| Record date         | *record_date*                   | Date. YYYY-MM-DD       |
+|                     |                                 | format.                |
+|                     |                                 | The date that the      |
+|                     |                                 | record was last        |
+|                     |                                 | updated.               |
++---------------------+---------------------------------+------------------------+
 
 .. _section-2:
 
@@ -490,10 +490,10 @@ ORDS product category values
 +------+------------------------------+------------------------------+
 | *ID* | *Product category*           | *Notes*                      |
 +======+==============================+==============================+
-| 1    | Aircon/dehumidifier          | Home/office appliance that   |
+| 1    | Aircon / dehumidifier        | Home/office appliance that   |
 |      |                              | adjusts ambient air quality. |
 +------+------------------------------+------------------------------+
-| 2    | Battery/charger/adapter      | e.g. mobile phone charger,   |
+| 2    | Battery / charger / adapter  | e.g. mobile phone charger,   |
 |      |                              | portable battery.            |
 +------+------------------------------+------------------------------+
 | 3    | Decorative or safety lights  | e.g. bike lights, fairy      |
@@ -505,7 +505,7 @@ ORDS product category values
 | 5    | Digital compact camera       | e.g. smaller electronic      |
 |      |                              | camera.                      |
 +------+------------------------------+------------------------------+
-| 6    | DSLR/video camera            | e.g. larger electronic       |
+| 6    | DSLR / video camera          | e.g. larger electronic       |
 |      |                              | camera.                      |
 +------+------------------------------+------------------------------+
 | 7    | Fan                          | e.g. cooling fan, fan        |
@@ -560,7 +560,7 @@ ORDS product category values
 |      |                              | tool, e.g. leaf blower,      |
 |      |                              | drill.                       |
 +------+------------------------------+------------------------------+
-| 25   | Printer/scanner              | Any inkjet, laserjet,        |
+| 25   | Printer / scanner            | Any inkjet, laserjet,        |
 |      |                              | scanner, copier or           |
 |      |                              | combination appliance.       |
 +------+------------------------------+------------------------------+
@@ -591,7 +591,7 @@ ORDS product category values
 | 34   | Vacuum                       | Home appliance for sucking   |
 |      |                              | dust and dirt.               |
 +------+------------------------------+------------------------------+
-| 35   | Watch/clock                  | Any electronic time-keeping  |
+| 35   | Watch / clock                | Any electronic time-keeping  |
 |      |                              | or fitness monitoring        |
 |      |                              | device.                      |
 +------+------------------------------+------------------------------+

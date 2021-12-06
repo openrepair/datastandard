@@ -10,7 +10,7 @@ Version
 *Description*: Updated version agreed by Open Repair Alliance founding
 members, based on analysis and aggregation of data provided by partners
 
-*Published*: dd mm 2021
+*Published*: 07/12/2021
 
 *Authors:* The Restart Project
 
@@ -48,9 +48,9 @@ and aggregation of data provided by partners.
 **V0.2.1** - Published January 2021. “Blender” category name changed to
 “Food processor”.
 
-**V0.3** - Published November 2021.
+**V0.3** - Published December 2021.
 
 -  inclusion of unique *product_category* identifiers
 
--  inclusion of calculated field *product_age_estimate*
+-  inclusion of field *product_age*
 

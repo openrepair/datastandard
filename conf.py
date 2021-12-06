@@ -22,7 +22,7 @@ from recommonmark.transform import AutoStructify
 # -- Project information -----------------------------------------------------
 
 project = u'Open Repair Data Standard'
-copyright = u'2020, Open Repair Alliance'
+copyright = u'2021, Open Repair Alliance'
 author = u'Open Repair Alliance'
 
 # The short X.Y version
@@ -48,7 +48,7 @@ extensions = [
 ]
 
 # user starts in dark mode
-default_dark_mode = True
+default_dark_mode = False
 
 pdf_documents = [('index', 'about', 'governance', 'standard', 'document'),]
 
@@ -190,4 +190,4 @@ def setup(app):
             'enable_eval_rst': True
             }, True)
     app.add_transform(AutoStructify)
-    app.add_stylesheet('custom.css')
+    app.add_css_file('custom.css')
