@@ -13,17 +13,10 @@ the visibility and the impact of the work we all do.
 
 Specifically, we aim to:
 
--  Create a joint approach to documenting successes and challenges with
-      post-warranty repairs
+-  Create a joint approach to documenting successes and challenges with post-warranty repairs
 
--  Promote it as a standard available to other community repair
-      networks, and in the future to commercial repairers and others
-      collecting repair data
+-  Promote it as a standard available to other community repair networks, and in the future to commercial repairers and others collecting repair data
 
--  Enable coalition members and others to use the data from our joint
-      work to produce insights, with the objective of demanding more
-      repairable products, improved support and access to better repair
-      services
+-  Enable coalition members and others to use the data from our joint work to produce insights, with the objective of demanding more repairable products, improved support and access to better repair services
 
--  Jointly explore additional information we can all collect to help
-      make a stronger case for increased repairability
+-  Jointly explore additional information we can all collect to help make a stronger case for increased repairability

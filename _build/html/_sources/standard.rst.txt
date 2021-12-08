@@ -222,15 +222,11 @@ Repair-related
 *Description:* This is the outcome of the repair attempt that was
 undertaken on the device at the event.
 
--  1: “Fixed” - if the repairer and owner were satisfied that the item
-      can continue to be used
+-  1: “Fixed” - if the repairer and owner were satisfied that the item can continue to be used
 
--  2: “Repairable” - if the repairer and owner didn’t complete a repair,
-      but identified what reasonable additional steps or professional
-      help is needed
+-  2: “Repairable” - if the repairer and owner didn’t complete a repair, but identified what reasonable additional steps or professional help is needed
 
--  3: “End of life” - if the repairer and the owner decided that it is
-      not cost-effective or realistic to repair the device
+-  3: “End of life” - if the repairer and the owner decided that it is not cost-effective or realistic to repair the device
 
 -  0: An empty or zero value is recorded as “Unknown”
 

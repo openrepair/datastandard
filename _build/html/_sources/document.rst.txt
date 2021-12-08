@@ -40,8 +40,7 @@ and aggregation of data provided by partners.
 
 -  Addition of *country* field
 
--  Removal of *model* field due to problems with data collection and
-      quality
+-  Removal of *model* field due to problems with data collection and quality
 
 -  Removal of “additional modules” section
 
