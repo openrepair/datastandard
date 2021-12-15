@@ -398,9 +398,9 @@ place through the governance and revision process.
 |                     |                                 | partner data.          |
 +---------------------+---------------------------------+------------------------+
 | Partner category    | *partner_product_category*      | Option from partner    |
-|                     |                                 | codelist.              |
+|                     |                                 | codelist or free text. |
 +---------------------+---------------------------------+------------------------+
-| Product category    | *product_category*              | Option from ORDS       |
+| Product category    | *product_category*              | Option from            |
 |                     |                                 | `product category      |
 |                     |                                 | code                   |
 |                     |                                 | list <#ords-product-   |
@@ -409,7 +409,7 @@ place through the governance and revision process.
 | Product category ID | *product_category_id*           | Unique identifier      |
 |                     |                                 | associated with each   |
 |                     |                                 | *product_category*.    |
-|                     |                                 | See the ORDS           |
+|                     |                                 | See the                |
 |                     |                                 | `product category      |
 |                     |                                 | code                   |
 |                     |                                 | list <#ords-product-   |
@@ -434,12 +434,12 @@ place through the governance and revision process.
 |                     |                                 | removed, e.g. email    |
 |                     |                                 | addresses,.            |
 +---------------------+---------------------------------+------------------------+
-| Repair status       | *repair_status*                 | Option from ORDS       |
+| Repair status       | *repair_status*                 | Option from            |
 |                     |                                 | `repair status         |
 |                     |                                 | codelist <#repai       |
 |                     |                                 | r-status-values>`__.   |
 +---------------------+---------------------------------+------------------------+
-| Repair barrier      | *repair_barrier_if_end_of_life* | Option from ORDS       |
+| Repair barrier      | *repair_barrier_if_end_of_life* | Option from            |
 |                     |                                 | `repair barrier        |
 |                     |                                 | codelist <#repair      |
 |                     |                                 | -barrier-values>`__.   |
@@ -463,9 +463,8 @@ place through the governance and revision process.
 |                     |                                 | the repair took        |
 |                     |                                 | place at.              |
 +---------------------+---------------------------------+------------------------+
-| Data provider       | *data_provider*                 | Option from ORDS       |
-|                     |                                 | codelist. Name of      |
-|                     |                                 | partner                |
+| Data provider       | *data_provider*                 | Option from codelist.  |
+|                     |                                 | Name of partner        |
 |                     |                                 | organisation.          |
 +---------------------+---------------------------------+------------------------+
 | Country             | *country*                       | String. 3 letter ISO   |
@@ -480,136 +479,117 @@ place through the governance and revision process.
 
 .. _section-2:
 
-ORDS product category values
+Product category values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+------+------------------------------+------------------------------+
-| *ID* | *Product category*           | *Notes*                      |
-+======+==============================+==============================+
-| 1    | Aircon / dehumidifier        | Home/office appliance that   |
-|      |                              | adjusts ambient air quality. |
-+------+------------------------------+------------------------------+
-| 2    | Battery / charger / adapter  | e.g. mobile phone charger,   |
-|      |                              | portable battery.            |
-+------+------------------------------+------------------------------+
-| 3    | Decorative or safety lights  | e.g. bike lights, fairy      |
-|      |                              | lights, Christmas lights.    |
-+------+------------------------------+------------------------------+
-| 4    | Desktop computer             | e.g. tower, mini tower, midi |
-|      |                              | tower, desktop.              |
-+------+------------------------------+------------------------------+
-| 5    | Digital compact camera       | e.g. smaller electronic      |
-|      |                              | camera.                      |
-+------+------------------------------+------------------------------+
-| 6    | DSLR / video camera          | e.g. larger electronic       |
-|      |                              | camera.                      |
-+------+------------------------------+------------------------------+
-| 7    | Fan                          | e.g. cooling fan, fan        |
-|      |                              | heater.                      |
-+------+------------------------------+------------------------------+
-| 8    | Flat screen                  | TVs and monitors.            |
-+------+------------------------------+------------------------------+
-| 9    | Hair & beauty item           | e.g. hair straightener,      |
-|      |                              | toothbrush, shaver.          |
-+------+------------------------------+------------------------------+
-| 10   | Handheld entertainment       | e.g. iPod, Walkman, Gameboy. |
-|      | device                       |                              |
-+------+------------------------------+------------------------------+
-| 11   | Headphones                   | e.g. over-ear, earpods.      |
-+------+------------------------------+------------------------------+
-| 12   | Hi-Fi integrated             | e.g. “Boombox”, stereo.      |
-+------+------------------------------+------------------------------+
-| 13   | Hi-Fi separates              | e.g. amplifier, speaker,     |
-|      |                              | turntable.                   |
-+------+------------------------------+------------------------------+
-| 14   | Kettle                       | Kitchen appliance for        |
-|      |                              | boiling water.               |
-+------+------------------------------+------------------------------+
-| 15   | Lamp                         | e.g. desk lamp, floor lamp.  |
-+------+------------------------------+------------------------------+
-| 16   | Laptop                       | Portable computer.           |
-+------+------------------------------+------------------------------+
-| 17   | Large home electrical        | e.g lawnmower, fitness       |
-|      |                              | machine.                     |
-+------+------------------------------+------------------------------+
-| 18   | Misc                         | Any electronic device that   |
-|      |                              | does not fit in another      |
-|      |                              | category.                    |
-+------+------------------------------+------------------------------+
-| 19   | Mobile                       | Any hand-held smartphone or  |
-|      |                              | other telecommunications     |
-|      |                              | device.                      |
-+------+------------------------------+------------------------------+
-| 20   | Musical instrument           | Any powered instrument e.g.  |
-|      |                              | keyboard, guitar.            |
-+------+------------------------------+------------------------------+
-| 21   | Paper shredder               | Home/office appliance for    |
-|      |                              | shredding documents.         |
-+------+------------------------------+------------------------------+
-| 22   | PC accessory                 | e.g. mouse, keyboard,        |
-|      |                              | webcam.                      |
-+------+------------------------------+------------------------------+
-| 23   | Portable radio               | e.g. radio alarm, transistor |
-|      |                              | radio.                       |
-+------+------------------------------+------------------------------+
-| 24   | Power tool                   | Any powered DIY or gardening |
-|      |                              | tool, e.g. leaf blower,      |
-|      |                              | drill.                       |
-+------+------------------------------+------------------------------+
-| 25   | Printer / scanner            | Any inkjet, laserjet,        |
-|      |                              | scanner, copier or           |
-|      |                              | combination appliance.       |
-+------+------------------------------+------------------------------+
-| 26   | Projector                    | e.g. slide projector, video  |
-|      |                              | projector, digital           |
-|      |                              | projector.                   |
-+------+------------------------------+------------------------------+
-| 27   | Sewing machine               | Home appliance for stitching |
-|      |                              | fabric.                      |
-+------+------------------------------+------------------------------+
-| 28   | Small home electrical        | e.g. baby monitor, doorbell, |
-|      |                              | multimeter.                  |
-+------+------------------------------+------------------------------+
-| 29   | Small kitchen item           | e.g. breadmaker, rice        |
-|      |                              | cooker, popcorn machine.     |
-+------+------------------------------+------------------------------+
-| 30   | Tablet                       | e.g. Kindle, Fire, satnav.   |
-+------+------------------------------+------------------------------+
-| 31   | Toaster                      | Kitchen appliance for        |
-|      |                              | browning baked goods.        |
-+------+------------------------------+------------------------------+
-| 32   | Toy                          | Any mains or battery powered |
-|      |                              | toy.                         |
-+------+------------------------------+------------------------------+
-| 33   | TV and gaming-related        | e.g. set-top box, DVD        |
-|      | accessories                  | player, games controller.    |
-+------+------------------------------+------------------------------+
-| 34   | Vacuum                       | Home appliance for sucking   |
-|      |                              | dust and dirt.               |
-+------+------------------------------+------------------------------+
-| 35   | Watch / clock                | Any electronic time-keeping  |
-|      |                              | or fitness monitoring        |
-|      |                              | device.                      |
-+------+------------------------------+------------------------------+
-| 36   | Coffee maker                 | e.g. Nespresso, electronic   |
-|      |                              | filter or espresso machine.  |
-+------+------------------------------+------------------------------+
-| 37   | Food processor               | e.g. multi processor,        |
-|      |                              | blender, juicer, coffee      |
-|      |                              | grinder, stick blender, hand |
-|      |                              | mixer.                       |
-+------+------------------------------+------------------------------+
-| 38   | Games console                | e.g. Playstation, XBox. Note |
-|      |                              | that a small console may be  |
-|      |                              | classified as a “Hand-held   |
-|      |                              | entertainment device”.       |
-+------+------------------------------+------------------------------+
-| 39   | Hair dryer                   | Appliance for hair drying    |
-|      |                              | and styling with warm air.   |
-+------+------------------------------+------------------------------+
-| 40   | Iron                         | e.g. clothes iron, steam     |
-|      |                              | iron.                        |
-+------+------------------------------+------------------------------+
++------+-------------------------------+-----------------------------------------+
+| *ID* | *Product category*            | *Notes*                                 |
++======+===============================+=========================================+
+| 1    | Aircon/dehumidifier           | Home/office appliance that              |
+|      |                               | adjusts ambient air quality.            |
++------+-------------------------------+-----------------------------------------+
+| 2    | Battery/charger/adapter       | e.g. mobile phone charger,              |
+|      |                               | portable battery.                       |
++------+-------------------------------+-----------------------------------------+
+| 3    | Decorative or safety lights   | e.g. bike lights, fairy lights,         |
+|      |                               | Christmas lights.                       |
++------+-------------------------------+-----------------------------------------+
+| 4    | Desktop computer              | e.g. tower, mini tower, midi tower,     |
+|      |                               | desktop.                                |
++------+-------------------------------+-----------------------------------------+
+| 5    | Digital compact camera        | e.g. smaller electronic cameras.        |
++------+-------------------------------+-----------------------------------------+
+| 6    | DSLR/video camera             | e.g. larger electronic cameras.         |
++------+-------------------------------+-----------------------------------------+
+| 7    | Fan                           | e.g. cooling fan, fan heater.           |
++------+-------------------------------+-----------------------------------------+
+| 8    | Flat screen                   | TVs and monitors.                       |
++------+-------------------------------+-----------------------------------------+
+| 9    | Hair & beauty item            | e.g. hair straightener,                 |
+|      |                               | toothbrush, shaver.                     |
++------+-------------------------------+-----------------------------------------+
+| 10   | Handheld entertainment device | e.g. iPod, Walkman, Gameboy.            |
++------+-------------------------------+-----------------------------------------+
+| 11   | Headphones                    | e.g. over-ear, earpods.                 |
++------+-------------------------------+-----------------------------------------+
+| 12   | Hi-Fi integrated              | e.g. “Boombox”, stereo.                 |
++------+-------------------------------+-----------------------------------------+
+| 13   | Hi-Fi separates               | e.g. amplifier, speaker, turntable.     |
++------+-------------------------------+-----------------------------------------+
+| 14   | Kettle                        | Kitchen appliance for boiling water.    |
++------+-------------------------------+-----------------------------------------+
+| 15   | Lamp                          | e.g. desk lamp, floor lamp.             |
++------+-------------------------------+-----------------------------------------+
+| 16   | Laptop                        | Portable computer.                      |
++------+-------------------------------+-----------------------------------------+
+| 17   | Large home electrical         | e.g lawnmower, fitness machine.         |
++------+-------------------------------+-----------------------------------------+
+| 18   | Misc                          | Any electronic device that does not fit |
+|      |                               | in another category.                    |
++------+-------------------------------+-----------------------------------------+
+| 19   | Mobile                        | Any hand-held smartphone or other       |
+|      |                               | telecommunications device.              |
++------+-------------------------------+-----------------------------------------+
+| 20   | Musical instrument            | Any powered instrument e.g.             |
+|      |                               | keyboard, guitar.                       |
++------+-------------------------------+-----------------------------------------+
+| 21   | Paper shredder                | Home/office appliance for               |
+|      |                               | shredding documents.                    |
++------+-------------------------------+-----------------------------------------+
+| 22   | PC accessory                  | e.g. mouse, keyboard, webcam.           |
++------+-------------------------------+-----------------------------------------+
+| 23   | Portable radio                | e.g. radio alarm, transistor radio.     |
++------+-------------------------------+-----------------------------------------+
+| 24   | Power tool                    | Any powered DIY or gardening            |
+|      |                               | tool, e.g. leaf blower, drill.          |
++------+-------------------------------+-----------------------------------------+
+| 25   | Printer/scanner               | Any inkjet, laserjet, scanner, copier   |
+|      |                               | or combination appliance.               |
++------+-------------------------------+-----------------------------------------+
+| 26   | Projector                     | e.g. slide projector, video projector,  |
+|      |                               | digital projector.                      |
++------+-------------------------------+-----------------------------------------+
+| 27   | Sewing machine                | Home appliance for stitching fabric.    |
++------+-------------------------------+-----------------------------------------+
+| 28   | Small home electrical         | e.g. baby monitor, doorbell,            |
+|      |                               | multimeter.                             |
++------+-------------------------------+-----------------------------------------+
+| 29   | Small kitchen item            | e.g. breadmaker, rice cooker,           |
+|      |                               | popcorn machine.                        |
++------+-------------------------------+-----------------------------------------+
+| 30   | Tablet                        | e.g. Kindle, Fire, satnav.              |
++------+-------------------------------+-----------------------------------------+
+| 31   | Toaster                       | Kitchen appliance for                   |
+|      |                               | browning baked goods.                   |
++------+-------------------------------+-----------------------------------------+
+| 32   | Toy                           | Any mains or battery powered toy.       |
++------+-------------------------------+-----------------------------------------+
+| 33   | TV and gaming-related         | e.g. set-top box, DVD player,           |
+|      | accessories                   | games controller.                       |
++------+-------------------------------+-----------------------------------------+
+| 34   | Vacuum                        | Home appliance for sucking              |
+|      |                               | dust and dirt.                          |
++------+-------------------------------+-----------------------------------------+
+| 35   | Watch/clock                   | Any electronic time-keeping             |
+|      |                               | or fitness monitoring device.           |
++------+-------------------------------+-----------------------------------------+
+| 36   | Coffee maker                  | e.g. Nespresso, electronic              |
+|      |                               | filter or espresso machine.             |
++------+-------------------------------+-----------------------------------------+
+| 37   | Food processor                | e.g. multi processor, blender,          |
+|      |                               | juicer, coffee grinder,                 |
+|      |                               | stick blender, hand mixer.              |
++------+-------------------------------+-----------------------------------------+
+| 38   | Games console                 | e.g. Playstation, XBox. Note            |
+|      |                               | that a small console may be             |
+|      |                               | classified as a “Hand-held              |
+|      |                               | entertainment device”.                  |
++------+-------------------------------+-----------------------------------------+
+| 39   | Hair dryer                    | Appliance for hair drying               |
+|      |                               | and styling with warm air.              |
++------+-------------------------------+-----------------------------------------+
+| 40   | Iron                          | e.g. clothes iron, steam iron.          |
++------+-------------------------------+-----------------------------------------+
 
 Repair status values
 ~~~~~~~~~~~~~~~~~~~~
