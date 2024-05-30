@@ -55,6 +55,8 @@ Assuming Python and pip are installed:
 
 `$ pip install sphinx-rtd-dark-mode`
 
+`$ pip install rst2pdf`
+
 `$ make html`
 
 [How to format images in the markup](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images)
